@@ -1,0 +1,1469 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#8300ff">
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="나목">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://namok.co.kr/">
+  <meta property="og:image" content="img/img_og.jpg">
+  <meta name="description" content="나목">
+  <meta name="og:description" content="나목">
+  <meta name="keyword" content="나목">
+  <meta name="og:keyword" content="나목">
+  <title>나목 - Namok</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="namok/style.css" />
+  <link href="css/slider.css" rel="stylesheet" type="text/css">
+  <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet" />
+  <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <!-- fullpage -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/history.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script>
+    $(document).ready(function() {
+      $(".intro h2").animate({
+        "top": "0",
+        "color": "rgba(255, 255, 255, 1)"
+      }, 900);
+      $(".intro .sub").animate({
+        "top": "48px",
+        "color": "rgba(255, 255, 255, 1)"
+      }, 900);
+
+      let bg = document.getElementById("fixed_img");
+      let img = document.getElementById("ani_img");
+
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        img.style.top = value * 1 + 'px';
+      });
+
+      $(window).scroll(function() {
+        var i = $(".fade_in").offset().top;
+        var j = window.scrollY;
+
+        if (i - j < 600) {
+          $(".fade_in").animate({
+            "opacity": "1"
+          }, 900);
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(function() {
+      $(".lang").mouseenter(function() {
+        $(".lang_list .lang_en").animate({
+          "opacity": "1"
+        }, 500);
+        $(".lang_list .lang_kr").animate({
+          "opacity": "1"
+        }, 1000);
+      });
+
+      $(".lang").mouseleave(function() {
+        $(".lang_list .lang_kr").animate({
+          "opacity": "0"
+        }, 500);
+        $(".lang_list .lang_en").animate({
+          "opacity": "0"
+        }, 1000);
+      });
+
+      $(".dep").mouseenter(function() {
+        $(this).children(".dep2").css({
+          "display": "table"
+        });
+        $(this).children(".dep2").animate({
+          "bottom": "0"
+        }, 200);
+      });
+
+      $(".dep").mouseleave(function() {
+        $(this).children(".dep2").css({
+          "display": "none",
+          "bottom": "-300px"
+        });
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-white">
+  <div class="bg_container">
+    <img src="img/namok4.png" class="d-pc-only" id="ani_img" style="height: 400px; top:10px">
+    <img src="img/namok4.png" class="d-pad-only" id="ani_img" style="height: 630px; top:-100px">
+    <img src="img/m_namok4.png" class="d-mobile-only" id="ani_img" style="height: 570px; top:-100px">
+    <img src="img/m_namok4.png" class="d-500-only" id="ani_img" style="height: 380px; top:-80px">
+  </div>
+  <div id="wrap">
+    <header id="header" class="container-fluid bg-white sticky-top clearfix px-4">
+
+    </header>
+
+
+
+
+
+
+
+    <div id="visual">
+      <div class="history_wrap wrap_width">
+        <div class="history box_width first">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="container px-0 box-width-sub">
+                  <div class="text-black mb-3 fw-bolder" style="margin-top: -60px; color: #333333 !important; font-size: 70px">
+                    <div class="animate__animated animate__fadeInDown">News</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid px-0 text-dark mt-0">
+            <div class="row mt-4 py-5">
+              <div class="col-2"></div>
+              <div class="col-xl-8 col-12 mb-4 fs-7">
+                <div class="box-width-sub mt-2">
+
+                  <ul class="nav nav-tabs justify-content-end fs-6" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="px-4 nav-link border text-dark active rounded-0" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true" style="width: 174px; height: 60px; ">전체</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="px-4 nav-link border text-dark rounded-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false" aria-busy="" style="width: 174px; height: 60px;">언론</button>
+                    </li>
+                    <!--
+                    <li class="nav-item" role="presentation">
+                      <button class="px-4 nav-link border text-dark" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">나목뉴스</button>
+                    </li>
+-->
+                  </ul>
+
+
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel">
+                      <a onclick="window.open('http://cnews.beyondpost.co.kr/view.php?ud=202203300919531510992c130dbe_30')">
+                        <div class="row mt-5 cursor-pointer">
+                          <div class="col-6 text-start text-dark pe-5 ">
+                            <p class="fs-3 fw-bold mt-2">나목, 커뮤니케이션을 위한 서비스 고도화 착수</p>
+                            <p class="mt-3 mb-4" style="line-height: 22px; font-size: 15px; color: #333333;">2022 .03 .30</p>
+                            <p style="line-height: 29px; font-size: 14px; color: #333333;">
+                              "[비욘드포스트 김민혁 기자] 생활 모임 정보 플랫폼 부름(bloom)은 서비스
+                              경쟁력 강화를 위한 앱 고도화 및 NFT 도입 등을 전개하고 있다고 한다.
+
+                              ‘부름’은 행사, 이벤트와 같이 모임과 관련된 정보 제공 및 공유 플랫폼이다.
+                              이는 판매자와 구매자가 직접 플랫폼 내에서 정보를 공유, 판매, 예약 등을
+                              진행할 수 있도록 서비스를 제공하는 것이 특징이다...."
+                            </p>
+                          </div>
+                          
+                          <div class="col-6">
+                            <img src="img/headline-10.jpg" class="w-100">
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="row mt-5">
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.asiaa.co.kr/news/articleView.html?idxno=81316')">
+                            <img src="img/headline-9.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 서비스 ‘보상형 NFT’ 도입
+                            </p>
+                            <span class="text-secondary">2022 .03 .24</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=58163')">
+                            <img src="img/headline-8.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 코인원 상장 기념 에어드랍 이벤트…
+                            </p>
+                            <span class="text-secondary">2022 .03 .23</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=961920')">
+                            <img src="img/headline-7.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 가상자산 거래소 코인원 신규 상장
+                            </p>
+                            <span class="text-secondary">2022 .03 .22</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=763733')">
+                            <img src="img/headline-6.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, NFT를 통한 플랫폼 자격증명 도입
+                            </p>
+                            <span class="text-secondary">2022 .03 .21</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220317152357964167114f971d_29')">
+                            <img src="img/headline-5.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목-기술자들, 온라인 상품 공급 계약 체결
+                            </p>
+                            <span class="text-secondary">2022 .03 .17</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220314112902430767114f971d_29')">
+                            <img src="img/headline-4.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목-인터바일, 상호협력 및 파트너십 구축
+                            </p>
+                            <span class="text-secondary">2022 .03 .14</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=57473')">
+                            <img src="img/headline-3.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 NFT 서비스로 생태계 확장
+                            </p>
+                            <span class="text-secondary">2022 .02 .24</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=956312')">
+                            <img src="img/headline-2.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임정보 플랫폼 부름 ‘상생경영 강화’
+                            </p>
+                            <span class="text-secondary">2022 .02 .22</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://cnews.beyondpost.co.kr/view.php?ud=20220216182421545967114f971d_30')">
+                            <img src="img/headline-1.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 부름 앱 전국 사용처 확대
+                            </p>
+                            <span class="text-secondary">2022 .02 .17</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=134154')">
+                            <img src="img/headline0.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">주식회사 나목, 한국MICE협회 정회원 승인
+                            </p>
+                            <span class="text-secondary">2022 .02 .11</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                            <img src="img/headline1.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 옥순호 대표이사 선임…‘NFT 멤버십..</p>
+                            <span class="text-secondary">2022 .02 .09</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133946')">
+                            <img src="img/headline2.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 스마트 컨트랙트 통해 ‘마이스 NFT 멤버십 서비스' 확대</p>
+                            <span class="text-secondary">2022 .02 .04</span>
+                          </a>
+                        </div>
+
+
+
+                      </div>
+                      <!--callapse//s-->
+                      <div class="collapse" id="collapseNewsAll">
+                        <div class="row">
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('https://www.gokorea.kr/news/articleView.html?idxno=718939')">
+                              <img src="img/headline3.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, NFT 멤버십 서비스 도입</p>
+                              <span class="text-secondary">2022 .01 .27</span>
+                            </a>
+                          </div>
+
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133673')">
+                              <img src="img/headline4.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스(MYCE), 메타버스 비대면 모임 개최
+                              </p>
+                              <span class="text-secondary">2022 .01 .24</span>
+                            </a>
+                          </div>
+
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('https://www.gokorea.kr/news/articleView.html?idxno=715772')">
+                              <img src="img/headline5.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목 부름앱 론칭 기념, 회원가입 이벤트 진행
+                              </p>
+                              <span class="text-secondary">2021 .11 .23</span>
+                            </a>
+                          </div>
+
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                              <img src="img/headline6.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스코인, 부름 플랫폼 결제 서비스 국내 론칭
+                              </p>
+                              <span class="text-secondary">2021 .11 .16</span>
+                            </a>
+                          </div>
+
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.asiaa.co.kr/news/articleView.html?idxno=65359')">
+                              <img src="img/headline7.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목 '부름 플랫폼', 국제공연예술교육협회와 협약체결
+                              </p>
+                              <span class="text-secondary">2021 .11 .05</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=53865')">
+                              <img src="img/headline8.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, 제 2회 단독 밋업 오프라인 행사 개최
+                              </p>
+                              <span class="text-secondary">2021 .10 .28</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=654866')">
+                              <img src="img/headline9.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, 비트렉스서 정식 상장
+                              </p>
+                              <span class="text-secondary">2021 .10 .06</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://it.chosun.com/site/data/html_dir/2021/09/17/2021091702072.html')">
+                              <img src="img/headline10.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 '부름’ 한국페이즈서비스와 디지털 상품권 공급 계약
+                              </p>
+                              <span class="text-secondary">2021 .09 .19</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('https://www.dailian.co.kr/news/view/1024372/?sc=Naver')">
+                              <img src="img/headline11.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 ‘부름(Bloom)’ 국내 론칭 본격 시동
+
+                              </p>
+                              <span class="text-secondary">2021 .08 .20</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.newsworks.co.kr/news/articleView.html?idxno=503048')">
+                              <img src="img/headline12.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">MYCE, 캐셔레스트 거래소 원화마켓 상장
+
+                              </p>
+                              <span class="text-secondary">2020 .11 .13</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row d-grid gap-2 col-2 mx-auto">
+                        <a class="btn btn-white border rounded-0 py-3 more_btn mt-4" data-bs-toggle="collapse" href="#collapseNewsAll" role="button" aria-expanded="false" aria-controls="collapseNewsAll" style="z-index: 9999; width: 174px; height: 60px;">
+                        </a>
+                      </div>
+                      <!--callapse//e-->
+                    </div>
+                    <div class="tab-pane fade " id="profile" role="tabpanel">
+                      <a onclick="window.open('http://cnews.beyondpost.co.kr/view.php?ud=202203300919531510992c130dbe_30')">
+                        <div class="row mt-5 cursor-pointer">
+                          <div class="col-6 text-start text-dark pe-5 ">
+                            <p class="fs-3 fw-bold mt-2">나목, 커뮤니케이션을 위한 서비스 고도화 착수</p>
+                            <p class="mt-3 mb-4" style="line-height: 22px; font-size: 15px; color: #333333;">2022 .03 .30</p>
+                            <p style="line-height: 29px; font-size: 14px; color: #333333;">
+                              "[비욘드포스트 김민혁 기자] 생활 모임 정보 플랫폼 부름(bloom)은 서비스
+                              경쟁력 강화를 위한 앱 고도화 및 NFT 도입 등을 전개하고 있다고 한다.
+
+                              ‘부름’은 행사, 이벤트와 같이 모임과 관련된 정보 제공 및 공유 플랫폼이다.
+                              이는 판매자와 구매자가 직접 플랫폼 내에서 정보를 공유, 판매, 예약 등을
+                              진행할 수 있도록 서비스를 제공하는 것이 특징이다...."
+                            </p>
+
+                          </div>
+                          <div class="col-6">
+                            <img src="img/headline-10.jpg" class="w-100">
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="row mt-5">
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.asiaa.co.kr/news/articleView.html?idxno=81316')">
+                            <img src="img/headline-9.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 서비스 ‘보상형 NFT’ 도입
+                            </p>
+                            <span class="text-secondary">2022 .03 .24</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=58163')">
+                            <img src="img/headline-8.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 코인원 상장 기념 에어드랍 이벤트…
+                            </p>
+                            <span class="text-secondary">2022 .03 .23</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=961920')">
+                            <img src="img/headline-7.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 가상자산 거래소 코인원 신규 상장
+                            </p>
+                            <span class="text-secondary">2022 .03 .22</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=763733')">
+                            <img src="img/headline-6.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, NFT를 통한 플랫폼 자격증명 도입
+                            </p>
+                            <span class="text-secondary">2022 .03 .21</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220317152357964167114f971d_29')">
+                            <img src="img/headline-5.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목-기술자들, 온라인 상품 공급 계약 체결
+                            </p>
+                            <span class="text-secondary">2022 .03 .17</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220314112902430767114f971d_29')">
+                            <img src="img/headline-4.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목-인터바일, 상호협력 및 파트너십 구축
+                            </p>
+                            <span class="text-secondary">2022 .03 .14</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=57473')">
+                            <img src="img/headline-3.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 NFT 서비스로 생태계 확장
+                            </p>
+                            <span class="text-secondary">2022 .02 .24</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=956312')">
+                            <img src="img/headline-2.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임정보 플랫폼 부름 ‘상생경영 강화’
+                            </p>
+                            <span class="text-secondary">2022 .02 .22</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://cnews.beyondpost.co.kr/view.php?ud=20220216182421545967114f971d_30')">
+                            <img src="img/headline-1.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 부름 앱 전국 사용처 확대
+                            </p>
+                            <span class="text-secondary">2022 .02 .17</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=134154')">
+                            <img src="img/headline0.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">주식회사 나목, 한국MICE협회 정회원 승인
+                            </p>
+                            <span class="text-secondary">2022 .02 .11</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                            <img src="img/headline1.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 옥순호 대표이사 선임…‘NFT 멤버십..</p>
+                            <span class="text-secondary">2022 .02 .09</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133946')">
+                            <img src="img/headline2.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 스마트 컨트랙트 통해 ‘마이스 NFT 멤버십 서비스' 확대</p>
+                            <span class="text-secondary">2022 .02 .04</span>
+                          </a>
+                        </div>
+
+
+
+                      </div>
+                      <!--callapse//s-->
+                      <div class="collapse" id="collapseNewsAll2">
+                        <div class="row">
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=53865')">
+                              <img src="img/headline8.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, 제 2회 단독 밋업 오프라인 행사 개최
+                              </p>
+                              <span class="text-secondary">2021 .10 .28</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=654866')">
+                              <img src="img/headline9.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, 비트렉스서 정식 상장
+                              </p>
+                              <span class="text-secondary">2021 .10 .06</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://it.chosun.com/site/data/html_dir/2021/09/17/2021091702072.html')">
+                              <img src="img/headline10.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 '부름’ 한국페이즈서비스와 디지털 상품권 공급 계약
+                              </p>
+                              <span class="text-secondary">2021 .09 .19</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('https://www.dailian.co.kr/news/view/1024372/?sc=Naver')">
+                              <img src="img/headline11.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 ‘부름(Bloom)’ 국내 론칭 본격 시동
+
+                              </p>
+                              <span class="text-secondary">2021 .08 .20</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.newsworks.co.kr/news/articleView.html?idxno=503048')">
+                              <img src="img/headline12.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">MYCE, 캐셔레스트 거래소 원화마켓 상장
+
+                              </p>
+                              <span class="text-secondary">2020 .11 .13</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row d-grid gap-2 col-2 mx-auto">
+                        <a class="btn btn-white border rounded-0 py-3 more_btn mt-4" data-bs-toggle="collapse" href="#collapseNewsAll2" role="button" aria-expanded="false" aria-controls="collapseNewsAll2" style="z-index: 9999; width: 174px; height: 60px;">
+                        </a>
+                      </div>
+                      <!--callapse//e-->
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel">
+                      <div class="row mt-5">
+                        ...sample section3
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+              </div>
+              <div class="col-2"></div>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <footer class="row">
+
+      </footer>
+    </div>
+
+
+
+
+
+    <div id="m_visual">
+      <div class="history_wrap wrap_width">
+        <div class="text-black fw-bolder about_namok_title pt-4 px-4">
+          <div class="animate__animated animate__fadeInDown">NEWS</div>
+        </div>
+
+        <div class="pad_only">
+          <div class="row mt-4 py-5 px-4">
+            <div class="col-12 mb-4 fs-7">
+              <div class="box-width-sub mt-2">
+
+                <ul class="nav nav-tabs justify-content-end fs-6" id="pad_myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="px-4 nav-link border text-dark active" id="pad_home-tab" data-bs-toggle="tab" data-bs-target="#pad_home" type="button" role="tab" aria-controls="pad_home" aria-selected="true">전체</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="px-4 nav-link border text-dark" id="pad_profile-tab" data-bs-toggle="tab" data-bs-target="#pad_profile" type="button" role="tab" aria-controls="pad_profile" aria-selected="false">언론</button>
+                  </li>
+                  <!--
+                  <li class="nav-item" role="presentation">
+                    <button class="px-4 nav-link border text-dark" id="pad_contact-tab" data-bs-toggle="tab" data-bs-target="#pad_contact" type="button" role="tab" aria-controls="pad_contact" aria-selected="false">나목뉴스</button>
+                  </li>
+-->
+                </ul>
+
+
+                <div class="tab-content" id="pad_myTabContent">
+                  <div class="tab-pane fade show active" id="pad_home" role="tabpanel">
+                    <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                      <div class="row mt-5 cursor-pointer">
+                        <div class="col-6 text-start text-dark pe-5 ">
+                          <p class="fs-3 fw-bold mt-2">나목, 커뮤니케이션을 위한 서비스 고도화 착수</p>
+                          <p class="mt-3 mb-4" style="line-height: 22px; font-size: 15px; color: #333333;">2022 .03 .30</p>
+                          <p style="line-height: 29px; font-size: 14px; color: #333333;">
+                            "[비욘드포스트 김민혁 기자] 생활 모임 정보 플랫폼 부름(bloom)은 서비스
+                            경쟁력 강화를 위한 앱 고도화 및 NFT 도입 등을 전개하고 있다고 한다.
+
+                            ‘부름’은 행사, 이벤트와 같이 모임과 관련된 정보 제공 및 공유 플랫폼이다.
+                            이는 판매자와 구매자가 직접 플랫폼 내에서 정보를 공유, 판매, 예약 등을
+                            진행할 수 있도록 서비스를 제공하는 것이 특징이다...."
+                          </p>
+
+                        </div>
+                        <div class="col-6">
+                          <img src="img/headline-10.jpg" class="w-100">
+                        </div>
+                      </div>
+                    </a>
+
+                    <div class="row mt-5">
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.asiaa.co.kr/news/articleView.html?idxno=81316')">
+                          <img src="img/headline-9.png" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 서비스 ‘보상형 NFT’ 도입
+                          </p>
+                          <span class="text-secondary">2022 .03 .24</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=58163')">
+                          <img src="img/headline-8.png" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">마이스, 코인원 상장 기념 에어드랍 이벤트…
+                          </p>
+                          <span class="text-secondary">2022 .03 .23</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=961920')">
+                          <img src="img/headline-7.png" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">마이스, 가상자산 거래소 코인원 신규 상장
+                          </p>
+                          <span class="text-secondary">2022 .03 .22</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=763733')">
+                          <img src="img/headline-6.png" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">마이스, NFT를 통한 플랫폼 자격증명 도입
+                          </p>
+                          <span class="text-secondary">2022 .03 .21</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220317152357964167114f971d_29')">
+                          <img src="img/headline-5.jpg" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">나목-기술자들, 온라인 상품 공급 계약 체결
+                          </p>
+                          <span class="text-secondary">2022 .03 .17</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220314112902430767114f971d_29')">
+                          <img src="img/headline-4.jpg" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">나목-인터바일, 상호협력 및 파트너십 구축
+                          </p>
+                          <span class="text-secondary">2022 .03 .14</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=57473')">
+                          <img src="img/headline-3.png" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 NFT 서비스로 생태계 확장
+                          </p>
+                          <span class="text-secondary">2022 .02 .24</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=956312')">
+                          <img src="img/headline-2.png" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임정보 플랫폼 부름 ‘상생경영 강화’
+                          </p>
+                          <span class="text-secondary">2022 .02 .22</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://cnews.beyondpost.co.kr/view.php?ud=20220216182421545967114f971d_30')">
+                          <img src="img/headline-1.jpg" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">나목, 부름 앱 전국 사용처 확대
+                          </p>
+                          <span class="text-secondary">2022 .02 .17</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=134154')">
+                          <img src="img/headline0.jpg" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">주식회사 나목, 한국MICE협회 정회원 승인
+                          </p>
+                          <span class="text-secondary">2022 .02 .11</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                          <img src="img/headline1.jpg" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">나목, 옥순호 대표이사 선임…‘NFT 멤버십..</p>
+                          <span class="text-secondary">2022 .02 .09</span>
+                        </a>
+                      </div>
+
+                      <div class="col-4 my-2 cursor-pointer">
+                        <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133946')">
+                          <img src="img/headline2.jpg" class="w-100">
+                          <p class="fs-5 fw-bold my-2 text-truncate">나목, 스마트 컨트랙트 통해 ‘마이스 NFT 멤버십 서비스' 확대</p>
+                          <span class="text-secondary">2022 .02 .04</span>
+                        </a>
+                      </div>
+
+
+
+                    </div>
+                    <!--callapse//s-->
+                    <div class="collapse" id="pad_collapseNewsAll">
+                      <div class="row">
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=53865')">
+                            <img src="img/headline8.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 제 2회 단독 밋업 오프라인 행사 개최
+                            </p>
+                            <span class="text-secondary">2021 .10 .28</span>
+                          </a>
+                        </div>
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=654866')">
+                            <img src="img/headline9.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 비트렉스서 정식 상장
+                            </p>
+                            <span class="text-secondary">2021 .10 .06</span>
+                          </a>
+                        </div>
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://it.chosun.com/site/data/html_dir/2021/09/17/2021091702072.html')">
+                            <img src="img/headline10.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 '부름’ 한국페이즈서비스와 디지털 상품권 공급 계약
+                            </p>
+                            <span class="text-secondary">2021 .09 .19</span>
+                          </a>
+                        </div>
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailian.co.kr/news/view/1024372/?sc=Naver')">
+                            <img src="img/headline11.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 ‘부름(Bloom)’ 국내 론칭 본격 시동
+
+                            </p>
+                            <span class="text-secondary">2021 .08 .20</span>
+                          </a>
+                        </div>
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.newsworks.co.kr/news/articleView.html?idxno=503048')">
+                            <img src="img/headline12.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">MYCE, 캐셔레스트 거래소 원화마켓 상장
+
+                            </p>
+                            <span class="text-secondary">2020 .11 .13</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row d-grid gap-2 col-2 mx-auto">
+                      <a class="btn btn-white border py-2 more_btn mt-4" data-bs-toggle="collapse" href="#pad_collapseNewsAll" role="button" aria-expanded="false" aria-controls="pad_collapseNewsAll" style="z-index: 9999;">
+                      </a>
+                    </div>
+                    <!--callapse//e-->
+                  </div>
+                  <div class="tab-pane fade " id="pad_profile" role="tabpanel">
+
+                    <div class="row mt-5">
+                      <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                        <div class="row mt-5 cursor-pointer">
+                          <div class="col-6 text-start text-dark pe-5 ">
+                            <p class="fs-3 fw-bold mt-2">나목, 커뮤니케이션을 위한 서비스 고도화 착수</p>
+                            <p class="mt-3 mb-4" style="line-height: 22px; font-size: 15px; color: #333333;">2022 .03 .30</p>
+                            <p style="line-height: 29px; font-size: 14px; color: #333333;">
+                              "[비욘드포스트 김민혁 기자] 생활 모임 정보 플랫폼 부름(bloom)은 서비스
+                              경쟁력 강화를 위한 앱 고도화 및 NFT 도입 등을 전개하고 있다고 한다.
+
+                              ‘부름’은 행사, 이벤트와 같이 모임과 관련된 정보 제공 및 공유 플랫폼이다.
+                              이는 판매자와 구매자가 직접 플랫폼 내에서 정보를 공유, 판매, 예약 등을
+                              진행할 수 있도록 서비스를 제공하는 것이 특징이다...."
+                            </p>
+
+                          </div>
+                          <div class="col-6">
+                            <img src="img/headline-10.jpg" class="w-100">
+                          </div>
+                        </div>
+                      </a>
+
+                      <div class="row mt-5">
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.asiaa.co.kr/news/articleView.html?idxno=81316')">
+                            <img src="img/headline-9.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 서비스 ‘보상형 NFT’ 도입
+                            </p>
+                            <span class="text-secondary">2022 .03 .24</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=58163')">
+                            <img src="img/headline-8.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 코인원 상장 기념 에어드랍 이벤트…
+                            </p>
+                            <span class="text-secondary">2022 .03 .23</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=961920')">
+                            <img src="img/headline-7.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 가상자산 거래소 코인원 신규 상장
+                            </p>
+                            <span class="text-secondary">2022 .03 .22</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=763733')">
+                            <img src="img/headline-6.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, NFT를 통한 플랫폼 자격증명 도입
+                            </p>
+                            <span class="text-secondary">2022 .03 .21</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220317152357964167114f971d_29')">
+                            <img src="img/headline-5.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목-기술자들, 온라인 상품 공급 계약 체결
+                            </p>
+                            <span class="text-secondary">2022 .03 .17</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.globalepic.co.kr/view.php?ud=20220314112902430767114f971d_29')">
+                            <img src="img/headline-4.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목-인터바일, 상호협력 및 파트너십 구축
+                            </p>
+                            <span class="text-secondary">2022 .03 .14</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=57473')">
+                            <img src="img/headline-3.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 NFT 서비스로 생태계 확장
+                            </p>
+                            <span class="text-secondary">2022 .02 .24</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.nbntv.co.kr/news/articleView.html?idxno=956312')">
+                            <img src="img/headline-2.png" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임정보 플랫폼 부름 ‘상생경영 강화’
+                            </p>
+                            <span class="text-secondary">2022 .02 .22</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://cnews.beyondpost.co.kr/view.php?ud=20220216182421545967114f971d_30')">
+                            <img src="img/headline-1.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 부름 앱 전국 사용처 확대
+                            </p>
+                            <span class="text-secondary">2022 .02 .17</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=134154')">
+                            <img src="img/headline0.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">주식회사 나목, 한국MICE협회 정회원 승인
+                            </p>
+                            <span class="text-secondary">2022 .02 .11</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                            <img src="img/headline1.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 옥순호 대표이사 선임…‘NFT 멤버십..</p>
+                            <span class="text-secondary">2022 .02 .09</span>
+                          </a>
+                        </div>
+
+                        <div class="col-4 my-2 cursor-pointer">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133946')">
+                            <img src="img/headline2.jpg" class="w-100">
+                            <p class="fs-5 fw-bold my-2 text-truncate">나목, 스마트 컨트랙트 통해 ‘마이스 NFT 멤버십 서비스' 확대</p>
+                            <span class="text-secondary">2022 .02 .04</span>
+                          </a>
+                        </div>
+
+
+
+                      </div>
+                      <!--callapse//s-->
+                      <div class="collapse" id="pad_collapseNewsAll2">
+                        <div class="row">
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=53865')">
+                              <img src="img/headline8.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, 제 2회 단독 밋업 오프라인 행사 개최
+                              </p>
+                              <span class="text-secondary">2021 .10 .28</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=654866')">
+                              <img src="img/headline9.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">마이스, 비트렉스서 정식 상장
+                              </p>
+                              <span class="text-secondary">2021 .10 .06</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://it.chosun.com/site/data/html_dir/2021/09/17/2021091702072.html')">
+                              <img src="img/headline10.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 '부름’ 한국페이즈서비스와 디지털 상품권 공급 계약
+                              </p>
+                              <span class="text-secondary">2021 .09 .19</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('https://www.dailian.co.kr/news/view/1024372/?sc=Naver')">
+                              <img src="img/headline11.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 ‘부름(Bloom)’ 국내 론칭 본격 시동
+
+                              </p>
+                              <span class="text-secondary">2021 .08 .20</span>
+                            </a>
+                          </div>
+                          <div class="col-4 my-2 cursor-pointer">
+                            <a onclick="window.open('http://www.newsworks.co.kr/news/articleView.html?idxno=503048')">
+                              <img src="img/headline12.jpg" class="w-100">
+                              <p class="fs-5 fw-bold my-2 text-truncate">MYCE, 캐셔레스트 거래소 원화마켓 상장
+
+                              </p>
+                              <span class="text-secondary">2020 .11 .13</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row d-grid gap-2 col-2 mx-auto">
+                        <a class="btn btn-white border py-2 more_btn mt-4" data-bs-toggle="collapse" href="#pad_collapseNewsAll2" role="button" aria-expanded="false" aria-controls="pad_collapseNewsAll2" style="z-index: 9999;">
+                        </a>
+                      </div>
+                      <!--callapse//e-->
+                    </div>
+
+                    <!--callapse//e-->
+                  </div>
+                  <div class="tab-pane fade" id="pad_contact" role="tabpanel">
+                    <div class="row mt-5">
+                      ...sample section3
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="mobile_only">
+          <div class="row mt-4 py-5">
+            <div class="col-12 mb-4 fs-7">
+              <div class="box-width-sub mt-2">
+
+                <ul class="nav nav-tabs fs-5 row gx-0 center" id="m_myTab" role="tablist">
+                  <li class="nav-item col" role="presentation">
+                    <div class="px-4 nav-link text-dark active" id="m_home-tab" data-bs-toggle="tab" data-bs-target="#m_home" role="tab" aria-controls="m_home" aria-selected="true">전체</div>
+                  </li>
+                  <!--
+                  <li class="nav-item col" role="presentation">
+                    <div class="px-4 nav-link text-dark" id="m_profile-tab" data-bs-toggle="tab" data-bs-target="#m_profile" role="tab" aria-controls="m_profile" aria-selected="false">언론</div>
+                  </li>
+-->
+                  <!--<li class="nav-item col" role="presentation">
+
+                    <div class="px-4 nav-link text-dark" id="m_contact-tab" data-bs-toggle="tab" data-bs-target="#m_contact" role="tab" aria-controls="m_contact" aria-selected="false">나목뉴스</div>
+                  </li>
+-->
+                </ul>
+
+
+                <div class="tab-content" id="m_myTabContent">
+                  <div class="tab-pane fade show active" id="m_home" role="tabpanel">
+                    <div class="row">
+                      <a onclick="window.open('http://www.nbntv.co.kr/news/articleView.html?idxno=953509')">
+                        <div class="col-12">
+                          <div class="news-image text-white" style="position: relative; text-shadow: 1px 1px #333333;">
+                            <img src="img/headline-10.jpg" class="w-100">
+                            <div style="position: absolute; top:60%" class="ps-4">
+                              <p class="fs-3 mb-2 fw-bold mb-1">나목, 커뮤니케이션을 위한 서비스..</p>
+                              <p class="fs-4">2022 .03 .30</p>
+                            </div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    <!--노출되는 뉴스목록:s-->
+                    <div class="row mt-5 px-4 align-items-center">
+                      <div class="col-5 my-2">
+                        <img src="img/headline-9.png" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133946')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 서비스 ‘보상형 NFT’ 도입
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2021. 03 .24</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">마이스, 폴리곤 서비스 ‘보상형 NFT’ 도입
+                            </div>
+                          </div>
+                        </a>
+
+                      </div>
+                      <div class="col-5 my-2">
+                        <img src="img/headline-8.png" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('https://www.gokorea.kr/news/articleView.html?idxno=718939)">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, 코인원 상장 기념 에어드랍 이벤트…
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 03 .23</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">마이스, 코인원 상장 기념 에어드랍 이벤트…
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-7.png" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133673')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, 가상자산 거래소 코인원 신규 상장
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 03 .22</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">마이스, 가상자산 거래소 코인원 신규 상장...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-6.png" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('https://www.gokorea.kr/news/articleView.html?idxno=715772')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, NFT를 통한 플랫폼 자격증명 도입
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 03 .22</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">마이스, NFT를 통한 플랫폼 자격증명 도입...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-5.jpg" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목-기술자들, 온라인 상품 공급 계약 체결
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 03 .21</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">나목-기술자들, 온라인 상품 공급 계약 체결...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-4.jpg" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목-인터바일, 상호협력 및 파트너십 구축
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 03 .17</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">나목-인터바일, 상호협력 및 파트너십 구축...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-3.png" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, 폴리곤 NFT 서비스로 생태계 확장
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 03 .14</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">마이스, 폴리곤 NFT 서비스로 생태계 확장...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-2.png" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목, 모임정보 플랫폼 부름 ‘상생경영 강화’
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 02 .24</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">나목, 모임정보 플랫폼 부름 ‘상생경영 강화’...
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline-1.jpg" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목, 부름 앱 전국 사용처 확대
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 02 .22</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">나목, 부름 앱 전국 사용처를 확대한다고..
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="col-5 my-2">
+                        <img src="img/headline0.jpg" class="w-100">
+                      </div>
+                      <div class="col-7">
+                        <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                          <div class="row">
+                            <div class="col-12 fs-5 fw-bold my-2 text-truncate">주식회사 나목, 한국MICE협회 정회원 승인
+                            </div>
+                            <div class="col-12 text-secondary fs-6">2022. 02 .17</div>
+                            <div class="col-12 fs-6 my-2 text-truncate">마이스 코인이 나목이 개발한 실생활 모임 정보 플랫폼 ‘부름' 서비스가 국내 론칭을 앞두고 있다고 16
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+
+                    </div>
+                    <!--노출되는 뉴스목록:e-->
+                    <!--callapse//s-->
+                    <div class="collapse" id="m_collapseNewsAll">
+                      <div class="row px-4 align-items-center">
+                        <div class="col-5 my-2">
+                          <img src="img/headline2.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133946')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목, 스마트 컨트랙트 통해 ‘마이스 NFT 멤버십 서비스' 확대
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 02 .04</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">나목, 스마트 컨트랙트 통해 ‘마이스 NFT 멤버십 서비스' 확대
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline3.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('https://www.gokorea.kr/news/articleView.html?idxno=718939)">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, NFT 멤버십 서비스 도입
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2022. 01 .27</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">실생활 결제 코인, 마이스(MYCE)코인이 NFT(Non-Fungible Token)를 사용한 멤버십 서비스를 확대한다고 오늘(27일) 밝혔다.
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline4.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('https://www.dailysecu.com/news/articleView.html?idxno=133673')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스(MYCE), 메타버스 비대면 모임 개최
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2022. 01 .24</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">마이스(MYCE) 코인이 메타버스에서 비대면 모임 이벤트를 2월 6일까지 진행한다.
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline5.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('https://www.gokorea.kr/news/articleView.html?idxno=715772')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목 부름앱 론칭 기념, 회원가입 이벤트 진행
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 11 .23</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">플랫폼 서비스 전문 벤처기업 ‘주식회사 나목(대표 김선혁)’에서 모임에 관련
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+
+                        <div class="col-5 my-2">
+                          <img src="img/headline6.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=683870')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스코인, 부름 플랫폼 결제 서비스 국내 론칭
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 11 .16</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">마이스 코인이 나목이 개발한 실생활 모임 정보 플랫폼 ‘부름' 서비스가 국내 론칭을 앞두고 있다고 16
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline7.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('http://www.asiaa.co.kr/news/articleView.html?idxno=65359')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목 '부름 플랫폼', 국제공연예술교육협회와 협약체결
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 11 .05</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">부름이 공연예술 발전 및 문화예술활동을 활성화하기 위해
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline8.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('http://www.it-b.co.kr/news/articleView.html?idxno=53865')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, 제 2회 단독 밋업 오프라인 행사 개최
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 10 .28</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">가상자산 마이스(MYCE)로 결제가 가능한 실생활 모임 정보 플랫폼 ‘부름(Bl
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline9.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('http://www.discoverynews.kr/news/articleView.html?idxno=654866')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">마이스, 비트렉스서 정식 상장
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 10 .06</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">마이스가 6일 비트렉스에 정식 상장된다. 6일 마이스에 따르면 마이스는 지난 3월 나목과 계약
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline10.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('http://it.chosun.com/site/data/html_dir/2021/09/17/2021091702072.html')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 '부름’ 한국페이즈서비스와 디지털 상품권 공급 계약
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 09 .19</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">플랫폼 서비스 전문 벤처기업인 나목이 자사가 개발한 ‘부름(Bloom)
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline11.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('https://www.dailian.co.kr/news/view/1024372/?sc=Naver')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">나목, 모임 커머스 플랫폼 ‘부름(Bloom)’ 국내 론칭 본격 시동
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2021. 08 .20</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">플랫폼 서비스 전문 벤처기업 ‘나목’에서 개발한 실생활 커머스 플랫폼 ‘부름(Bloom)’이
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="col-5 my-2">
+                          <img src="img/headline12.jpg" class="w-100">
+                        </div>
+                        <div class="col-7">
+                          <a onclick="window.open('http://www.newsworks.co.kr/news/articleView.html?idxno=503048')">
+                            <div class="row">
+                              <div class="col-12 fs-5 fw-bold my-2 text-truncate">MYCE, 캐셔레스트 거래소 원화마켓 상장
+                              </div>
+                              <div class="col-12 text-secondary fs-6">2020. 11 .13</div>
+                              <div class="col-12 fs-6 my-2 text-truncate">코핀홀딩스가 유틸리티 가상자산 마이스(MYCE)를 캐셔레스트 거래소의
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row d-grid gap-2 col-2 mx-auto">
+                      <a class="btn btn-white border py-2 more_btn mt-4" data-bs-toggle="collapse" href="#m_collapseNewsAll" role="button" aria-expanded="false" aria-controls="m_collapseNewsAll" style="z-index: 9999;">
+                      </a>
+                    </div>
+                    <!--callapse//e-->
+                  </div>
+                  <div class="tab-pane fade " id="m_profile" role="tabpanel">
+
+                    <div class="row mt-5">
+                      ...sample section2
+                    </div>
+
+                    <!--callapse//e-->
+                  </div>
+                  <div class="tab-pane fade" id="m_contact" role="tabpanel">
+                    <div class="row mt-5">
+                      ...sample section3
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div id="mobile_footer">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="mobile">
+    <div id="mobile_header">
+
+    </div>
+  </div>
+
+  <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+-->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
+  <script src="js/slider.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+        sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        scrollOverflow: true
+      });
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  <script>
+    $(function() {
+      $('#header').load('header.html');
+      $('#mobile_header').load('m_header.html');
+      $('footer').load('footer.html');
+      $('#mobile_footer').load('m_footer.html');
+    });
+  </script>
+
+</body>
+
+</html>

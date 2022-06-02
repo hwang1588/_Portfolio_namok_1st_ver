@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#8300ff">
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="나목">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://namok.co.kr/">
+  <meta property="og:image" content="img/img_og.jpg">
+  <meta name="description" content="나목">
+  <meta name="og:description" content="나목">
+  <meta name="keyword" content="나목">
+  <meta name="og:keyword" content="나목">
+  <title>나목 - Namok</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="namok/style.css" />
+  <link href="css/slider_platform.css" rel="stylesheet" type="text/css">
+  <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet" />
+  <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <!-- fullpage -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/history.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script>
+    $(document).ready(function() {
+      $(".intro h2").animate({
+        "top": "0",
+        "color": "rgba(255, 255, 255, 1)"
+      }, 900);
+      $(".intro .sub").animate({
+        "top": "48px",
+        "color": "rgba(255, 255, 255, 1)"
+      }, 900);
+
+      let bg = document.getElementById("fixed_img");
+      let img = document.getElementById("ani_img");
+
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        img.style.top = value * 1 + 'px';
+      });
+
+      $(window).scroll(function() {
+        var i = $(".fade_in").offset().top;
+        var j = window.scrollY;
+
+        if (i - j < 600) {
+          $(".fade_in").animate({
+            "opacity": "1"
+          }, 900);
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(function() {
+      $(".lang").mouseenter(function() {
+        $(".lang_list .lang_en").animate({
+          "opacity": "1"
+        }, 500);
+        $(".lang_list .lang_kr").animate({
+          "opacity": "1"
+        }, 1000);
+      });
+
+      $(".lang").mouseleave(function() {
+        $(".lang_list .lang_kr").animate({
+          "opacity": "0"
+        }, 500);
+        $(".lang_list .lang_en").animate({
+          "opacity": "0"
+        }, 1000);
+      });
+
+      $(".dep").mouseenter(function() {
+        $(this).children(".dep2").css({
+          "display": "table"
+        });
+        $(this).children(".dep2").animate({
+          "bottom": "0"
+        }, 200);
+      });
+
+      $(".dep").mouseleave(function() {
+        $(this).children(".dep2").css({
+          "display": "none",
+          "bottom": "-300px"
+        });
+      });
+    });
+  </script>
+
+</head>
+
+<body class="bg-white">
+  <div class="bg_container">
+    <img src="img/pc_namok_3.png" class="d-pc-only" id="ani_img" style="height: 800px; top:-180px">
+    <img src="img/pc_namok_3.png" class="d-pad-only" id="ani_img" style="height: 630px; top:-100px">
+    <img src="img/pc_namok_3.png" class="d-mobile-only" id="ani_img" style="height: 470px; top:-70px">
+    <img src="img/pc_namok_3.png" class="d-500-only" id="ani_img" style="height: 400px; top:-40px">
+
+
+
+    <!--
+    <img src="img/pc_namok_3.png" class="d-pad-only" id="ani_img">
+    <img src="img/mobile_namok_3.png" class="d-mobile-only" id="ani_img">
+-->
+
+  </div>
+  <div id="wrap">
+    <header id="header" class="container-fluid bg-white sticky-top clearfix px-4">
+    </header>
+
+    <div id="visual">
+      <div class="history_wrap wrap_width">
+        <div class="history box_width first">
+          <div class="container-fluid px-0">
+            <div class="row">
+              <div class="col-12">
+                <div class="container px-0 box-width-sub">
+                  <div class="text-black mb-3 fw-bolder" style="margin-top: -60px; color: #333333 !important; font-size: 70px">
+                    <div class="animate__animated animate__fadeInDown">Platform</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid px-0 text-dark mt-0">
+            <div class="box-width-sub mt-2">
+              <div class="row">
+                <div class="col-4 text-start text-dark">
+                  <p style="line-height: 22px; font-size: 16px; color: #666666; font-weight: 600">Platform Business</p>
+                  <p class="fs-45px fw-bold my-2">세상의 모든<br>모임 정보 플랫폼
+                  </p>
+                  <p style="line-height: 25px; font-size: 16px; color: #333333;">
+                    부름 앱만 있으면 특별한 순간에<br>
+                    언제 어디서나 모든 모임 정보 및<br>
+                    예약 서비스를 이용할 수 있습니다.</p>
+                  <div class="row mt-4">
+                    <div class="col-12">
+                      <a href="bloom.apk"><img src="img/download_namok.svg" class="float-start me-3" style="width: 47.5%"></a>
+                      <!--                      <a onclick="window.open('https://play.google.com/store/apps/details?id=com.kdax.mohaeng&hl=ko')"><img src="img/playstore.svg" class="float-start me-3" style="width: 47.5%"></a>-->
+                      <a class="cursor-pointer" onclick="window.open('https://apps.apple.com/us/app/sutiawbapp/id1572788318?ls=1')"><img src="img/appstore.svg" class="float-start" style="width: 47.5%"></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-6 ">
+                  <div class="video-holder mb-5 float-end">
+                    <video muted="" playsinline="" loop="" autoplay="" width="3000px">
+                      <source src="/video/namok.mp4" type="video/mp4" />
+                    </video>
+                    <div class="bloom center">Bloom</div>
+                  </div>
+                  <div class="" style="margin-top: -40px; z-index: 9999;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row py-5 mt-5">
+              <div class="col-2"></div>
+              <div class="col-xl-8 col-12 my-4 fs-7  wraper_platform">
+                <div class="box-width-sub">
+                  <div class="row align-items-center">
+                    <div class="w-50" style="width: 55% !important">
+                      <!--
+                      <div class="sliderContainer mt-4">
+                        <div class="slider single-item">
+                          <div>&nbsp;</div>
+                          <div>&nbsp;</div>
+                          <div>&nbsp;</div>
+                          <div>&nbsp;</div>
+                        </div>
+                      </div>
+-->
+                    </div>
+                    <div class="w-50" style="margin-top: 295px; width: 45% !important;">
+                      <p style="line-height: 22px; font-size: 15px; color: #333333; font-weight: 500;">Platform Business</p>
+                      <p class="fs-2 fw-bold my-2" data-aos="fade-down">세상의 모든<br>
+                        모임정보 플랫폼</p>
+                      <div class="d-flex my-4 ">
+                        <div class="list me-3" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                          <img src="img/gsap3.svg" class="w-100">
+                          <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1400" data-aos-duration="1000">최대 30%<br>파격할인</center>
+                        </div>
+                        <div class="list me-3" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+                          <img src="img/gsap2.svg" class="w-100">
+                          <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1600" data-aos-duration="1000">위치기반<br>지도검색</center>
+                        </div>
+                        <div class="list me-3" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+                          <img src="img/gsap1.svg" class="w-100">
+                          <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1800" data-aos-duration="1000">간편한<br>검색</center>
+                        </div>
+                        <div class="list me-3" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                          <img src="img/gsap4.svg" class="w-100">
+                          <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="2000" data-aos-duration="1000">마이<br>플래너</center>
+                        </div>
+                      </div>
+                      <p style="line-height: 25px; font-size: 16px; color: #333333;" data-aos="fade-up">
+                        최대 30%할인, 상품정보부터 주문까지 쉽고 빠르게 쾌적한 모바일 대용 <br><br>
+                        <a onclick="window.open('http://naliya.net/')">
+                          <button class="border border-secondary btn rounded-0 more_btn2 py-3 px-5 mt-3">bloom 홈페이지 바로가기</button>
+                        </a>
+                      </p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="row">
+      </footer>
+    </div>
+    <div id="m_visual">
+      <div class="history_wrap wrap_width">
+        <div class="text-black fw-bolder about_namok_title pt-4 px-4">
+          <div class="animate__animated animate__fadeInDown">Platform</div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-4 fs-7 ">
+            <div class="pad_only">
+              <div class="row px-4" style="padding-top: 70px">
+                <div class="col-4 text-start text-dark">
+                  <p style="line-height: 22px; font-size: 15px; color: #666666; font-weight: 600">Platform Business</p>
+                  <p class="fs-1 fw-bold my-2">세상의 모든<br>
+                    모임정보 플랫폼</p>
+                  <p style="line-height: 22px; font-size: 15px; color: #333333;">
+                    부름 앱만 있으면 특별한 순간에<br>
+                    언제 어디서나 모든 모임 정보 및<br>
+                    예약 서비스를 이용할 수 있습니다.</p>
+                  <div class="row mt-4">
+                    <div class="col-12">
+                      <img src="img/download_namok.svg" class="float-start me-3" style="width: 45%">
+                      <img src="img/appstore.svg" class="float-start" style="width: 45%">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-8 center">
+                  <div class="video-holder mb-5">
+                    <video muted="" playsinline="" loop="" autoplay="" width="3000px">
+                      <source src="/video/namok.mp4" type="video/mp4" />
+                    </video>
+                    <div class="bloom center">Bloom</div>
+                  </div>
+                  <div class="" style="margin-top: -40px; z-index: 9999;">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row bg-namok py-5 mt-5">
+                <div class="col-12 my-4 fs-7">
+                  <div class="box-width-sub">
+                    <div class="row align-items-center">
+                      <div class="w-50">
+                        <div class="sliderContainer mt-4">
+                          <div class="slider single-item platform">
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                            <div>&nbsp;</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="w-50">
+                        <p style="line-height: 22px; font-size: 15px; color: #333333; font-weight: 500;">Platform Business</p>
+                        <p class="fs-2 fw-bold my-2" data-aos="fade-down">세상의 모든<br>
+                          모임정보 플랫폼</p>
+                        <div class="d-flex my-4">
+                          <div class="list me-3" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                            <img src="img/gsap3.svg" class="w-100">
+                            <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1400" data-aos-duration="1000">위치기반<br>지도검색</center>
+                          </div>
+                          <div class="list me-3" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+                            <img src="img/gsap2.svg" class="w-100">
+                            <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1600" data-aos-duration="1000">간편한<br>검색</center>
+                          </div>
+                          <div class="list me-3" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+                            <img src="img/gsap1.svg" class="w-100">
+                            <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1800" data-aos-duration="1000">마이<br>플래너</center>
+                          </div>
+                          <div class="list me-3" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                            <img src="img/gsap4.svg" class="w-100">
+                            <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="2000" data-aos-duration="1000">특별한<br>할인</center>
+                          </div>
+                        </div>
+                        <p style="line-height: 24px; font-size: 15px; color: #333333;" data-aos="fade-up">
+                          최대 30%할인, 상품정보부터 주문까지<br>
+                          쉽고 빠르게 쾌적한 모바일 대용 <br><br>
+                          <a onclick="window.open('http://naliya.net/')">
+                            <button class="border btn rounded-0 more_btn py-2half px-4">bloom 홈페이지 바로가기</button>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+        <div class="mobile_only center">
+          <div class="row gx-0" style="padding-top: 70px">
+            <div class="video-holder center">
+              <video muted="" playsinline="" loop="" autoplay="" width="3000px">
+                <source src="/video/namok.mp4" type="video/mp4" />
+              </video>
+              <div class="bloom center">Bloom</div>
+            </div>
+            <div class="col-12 text-start text-dark px-4 my-5">
+              <p style="line-height: 22px; font-size: 15px; color: #666666; font-weight: 600">Platform Business</p>
+              <p class="fs-2 fw-bold my-2">세상의 모든<br>모임 정보 플랫폼
+              </p>
+              <p style="line-height: 25px; font-size: 15px; color: #333333;">
+                부름 앱만 있으면 특별한 순간에 언제 어디서나<br>
+                모든 모임 정보 및 예약 서비스를 이용할 수 있습니다.</p>
+              <div class="row my-4">
+                <div class="col-12">
+                  <a href="bloom.apk">
+                  <img src="img/download_namok.svg" class="float-start me-1" style="width:160px">
+                  </a>
+                  <!--                  <a onclick="window.open('https://play.google.com/store/apps/details?id=com.kdax.mohaeng&hl=ko')"><img src="img/google.svg" class="float-start me-2"></a>-->
+                  <a onclick="window.open('https://apps.apple.com/us/app/sutiawbapp/id1572788318?ls=1')">
+                  <img src="img/apple.svg" class="float-start">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row bg-namok py-5">
+            <div class="col-12 my-4 fs-7">
+              <div class="box-width-sub">
+                <div class="row align-items-center">
+                  <div class="w-50">
+                    <div class="sliderContainer mt-4">
+                      <div class="slider single-item platform">
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                        <div>&nbsp;</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w-50 ps-2">
+                    <p style="line-height: 22px; font-size: 15px; color: #333333; font-weight: 500;">Platform Business</p>
+                    <p class="fs-2 fw-bold my-2" data-aos="fade-down">세상의 모든<br>
+                      모임정보 플랫폼</p>
+                    <div class="d-flex my-4">
+                      <div class="list" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+                        <img src="img/gsap3.svg" class="w-50">
+                        <center class="fs-6 fw-bold mt-2" style="font-size: 14px !important" data-aos="fade-down" data-aos-delay="1400" data-aos-duration="1000">위치기반<br>지도검색</center>
+                      </div>
+                      <div class="list" style="font-size: 14px !important" data-aos="fade-left" data-aos-delay="600" data-aos-duration="1000">
+                        <img src="img/gsap2.svg" class="w-50">
+                        <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1600" data-aos-duration="1000">간편한<br>검색</center>
+                      </div>
+
+                      <div class="list" style="font-size: 14px !important" data-aos="fade-left" data-aos-delay="800" data-aos-duration="1000">
+                        <img src="img/gsap1.svg" class="w-50">
+                        <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="1800" data-aos-duration="1000">마이<br>플래너</center>
+                      </div>
+                      <div class="list" style="font-size: 14px !important" data-aos="fade-left" data-aos-delay="1000" data-aos-duration="1000">
+                        <img src="img/gsap4.svg" class="w-50">
+                        <center class="fs-6 fw-bold mt-2" data-aos="fade-down" data-aos-delay="2000" data-aos-duration="1000">특별한<br>할인</center>
+                      </div>
+                    </div>
+                    <p style="line-height: 24px; font-size: 15px; color: #333333;" data-aos="fade-up">
+                      최대 30%할인, 상품정보부터 주문까지<br>
+                      쉽고 빠르게 쾌적한 모바일 대용 <br><br>
+                      <a onclick="window.open('http://naliya.net/')">
+                        <button class="border btn rounded-0 more_btn py-2half px-4">bloom 홈페이지 바로가기</button>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+
+      <div id="mobile_footer">
+      </div>
+    </div>
+  </div>
+  <div id="mobile">
+    <div id="mobile_header">
+    </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
+  <script src="js/slider_platform.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+        sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        scrollOverflow: true
+      });
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="js/namok.js"></script>
+
+  <script>
+    $(function() {
+      $('#header').load('header.html');
+      $('#mobile_header').load('m_header.html');
+      $('footer').load('footer.html');
+      $('#mobile_footer').load('m_footer.html');
+    });
+  </script>
+
+</body>
+
+</html>

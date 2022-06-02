@@ -1,0 +1,712 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#8300ff">
+  <meta name="naver-site-verification" content="" />
+  <meta name="google-site-verification" content="" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="나목">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://namok.co.kr/">
+  <meta property="og:image" content="img/img_og.jpg">
+  <meta name="description" content="나목">
+  <meta name="og:description" content="나목">
+  <meta name="keyword" content="나목">
+  <meta name="og:keyword" content="나목">
+  <title>나목 - Namok</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="namok/style.css" />
+  <link href="css/slider.css" rel="stylesheet" type="text/css">
+  <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" rel="stylesheet" />
+  <link href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">  <link href="css/common.css" rel="stylesheet" type="text/css">
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  <!-- fullpage -->
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+  <link rel="stylesheet" type="text/css" href="css/history.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <script>
+    $(document).ready(function() {
+      $(".intro h2").animate({
+        "top": "0",
+        "color": "rgba(255, 255, 255, 1)"
+      }, 900);
+      $(".intro .sub").animate({
+        "top": "48px",
+        "color": "rgba(255, 255, 255, 1)"
+      }, 900);
+
+      let bg = document.getElementById("fixed_img");
+      let img = document.getElementById("ani_img");
+
+      window.addEventListener('scroll', function() {
+        var value = window.scrollY;
+        img.style.top = value * 1 + 'px';
+      });
+
+      $(window).scroll(function() {
+        var i = $(".fade_in").offset().top;
+        var j = window.scrollY;
+
+        if (i - j < 600) {
+          $(".fade_in").animate({
+            "opacity": "1"
+          }, 900);
+        }
+      });
+    });
+  </script>
+
+
+  <script>
+    $(function() {
+      $(".lang").mouseenter(function() {
+        $(".lang_list .lang_en").animate({
+          "opacity": "1"
+        }, 500);
+        $(".lang_list .lang_kr").animate({
+          "opacity": "1"
+        }, 1000);
+      });
+
+      $(".lang").mouseleave(function() {
+        $(".lang_list .lang_kr").animate({
+          "opacity": "0"
+        }, 500);
+        $(".lang_list .lang_en").animate({
+          "opacity": "0"
+        }, 1000);
+      });
+
+      $(".dep").mouseenter(function() {
+        $(this).children(".dep2").css({
+          "display": "table"
+        });
+        $(this).children(".dep2").animate({
+          "bottom": "0"
+        }, 200);
+      });
+
+      $(".dep").mouseleave(function() {
+        $(this).children(".dep2").css({
+          "display": "none",
+          "bottom": "-300px"
+        });
+      });
+    });
+  </script>
+</head>
+
+<body class="bg-white">
+  <div class="bg_container">
+    <img src="img/namok2.png" class="d-pc-only" id="ani_img" style="height: 486px; top:72px;">
+    <img src="img/namok2.png" class="d-pad-only" id="ani_img" style="height: 460px; top:-120px;">
+    <img src="img/namok2.png" class="d-mobile-only" id="ani_img" style="height: 460px; top:-120px;">
+    <img src="img/namok2.png" class="d-500-only" id="ani_img" style="height: 460px; top:-120px;">
+
+  </div>
+  <div id="wrap">
+    <header id="header" class="container-fluid bg-white sticky-top clearfix px-4">
+    </header>
+    <!-- e: header -->
+
+    <div id="visual">
+      <div class="history_wrap wrap_width">
+        <div class="history box_width first">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12">
+                <div class="container px-0 box-width-sub">
+                  <div class="text-black mb-3 fw-bolder" style="margin-top: -90px; color: #333333 !important; font-size: 70px">
+                    <div class="animate__animated animate__fadeInLeft">Business</div>
+                    <div style="margin-top: -10px;" class="animate__animated animate__fadeInDown">introduction</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid px-0 text-dark mt-5">
+            <div class="box-width-sub">
+              <div class="row">
+                <div class="col-5 fw-bold">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6 text-start text-dark">
+                  <div class="">
+                    <p class="fs-5 fw-bold mb-2 wow fadeInLeft">모임기반의 O2O 플랫폼 서비스의 개발, 운용</p>
+                    <p class="wow fadeInLeft" style="line-height: 25px; font-size: 14px; color: #333333;">
+                      서비스 플랫폼 ＇부름(Bloom)＇이 2021.11월 런칭하였습니다. 일상생활속에서 쉽게
+                      찾아볼 수 있는 이벤트와 관련된 모든 정보와 예약이 가능하며 복합 결제방식으로 선택
+                      할 경우 최대 30%의 할인혜택까지 받아갈 수 있습니다. </p>
+                  </div>
+                  <div class="mt-5">
+                    <p class="fs-5 fw-bold mb-2 wow fadeInLeft" data-wow-delay="0.3s">빅 데이터를 이용한 소비자 행동 분석 </p>
+                    <p class="wow fadeInLeft" data-wow-delay="0.3s" style="line-height: 25px; font-size: 14px; color: #333333;">
+                      소비자 행동 패턴 분석을 이용한 소비자의 숨은 니즈를 발견하고 및 행동 변화 예측하여 알맞은 상품을 추천드리고자 합니다. 고객 불만 데이터를 분석하여 전사적 서비스 개선에 반영하고 공공 데이터 분석을 이용하여 리스크를 관리하고자 합니다. </p>
+                  </div>
+                  <div class="collapse" id="collapseMg">
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">다양한 정보를 활용한 콘텐츠 배포</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        모임기반의 O2O플랫폼인만큼 해당 카테고리별 필요한 정보를 분석하여 콘텐츠를 제작하여 배포하고자 합니다. </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">온라인 커머스 시장확대와 영업제휴</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        플랫폼에서의 다양한 상품과 서비스, 합리적인 가격을 위해 비즈니스 제휴와 M&A로 회사와 브랜드 영향력을 넓히고자 합니다.
+                      </p>
+                    </div>
+                    <!--
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">이해상충 방지</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        임직원은 어떠한 상황에서도 개인의 이익보다는 회사의 이익을 추구하며, 개인적인 관계
+                        또는 경제적 이익을 취하는 것을 금지하고 있습니다. 이를 위해 회사 임직원은 회사의
+                        사업에 영향을 미치거나 영향을 미칠 수 있을 것으로 보이는 선물이나 접대를 요구하거나
+                        받지 않습니다.</p>
+                    </div>
+-->
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">디지털 거버넌스의 형성</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        플랫폼 정책결정 과정에의 참여와 상호작용이 형식적, 관례적 과정이 아닌 실질적, 실효성 높은 새로운 의사 결정방식으로서 디지털 거버넌스의 구축 및 운영을 하고자 합니다. </p>
+                    </div>
+                  </div>
+                  <a class="btn btn-white border py-3 rounded-0 more_btn mt-4 p-relative px-5" data-bs-toggle="collapse" href="#collapseMg" role="button" aria-expanded="false" aria-controls="collapseMg" style="z-index: 9999; position: relative; font-size: 14px; padding: 18px 66px !important;">
+                  </a>
+
+                  <img src="img/city.svg" class="intro_image2">
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5 bg-namok py-5" style="position: relative; z-index:20; margin-top: -250px !important;" id="business_section1_pc">
+              <div class="col-2"></div>
+              <div class="col-xl-8 col-12 my-4">
+                <div class="box-width-sub">
+                  <p class="border_solid fs-30px fw-bold pb-1 wow fadeInLeft">파트너 소개 <span class="fs-16px fw-normal">나목의 파트너사들을 소개합니다.</span></p>
+                  <div class="partners">
+                    <p class="mt-5 pt-4 pb-3"><b>Developer</b><span class="fs-16px">&nbsp;&nbsp;&nbsp;개발 파트너사 입니다.</span></p>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/01_aws.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/02_dataweaver.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/03_KG.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/04_Froala.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/05_kbsys.svg" class="w-100">
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/06_datagate.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/07_42MARU.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/08_Trustology.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="partners">
+                    <p class="mt-5  pb-3"><b>Marketing</b><span class="fs-16px">&nbsp;&nbsp;&nbsp;마케팅 파트너사 입니다.</span></p>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/09_graphics.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/10_jc.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/11_dp.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="partners">
+                    <p class="mt-5  pb-3"><b>Law firm</b><span class="fs-16px">&nbsp;&nbsp;&nbsp;법률관련 파트너사 입니다.</span></p>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/12_dlight.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/13_dentons.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/14_rene.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/15_BCAS.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="partners">
+                    <p class="mt-5 pb-3"><b>Store Brand</b><span class="fs-16px">&nbsp;&nbsp;&nbsp;입점 판매상품 브랜드사 입니다.</span></p>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/LG.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/PAYS.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/goobne.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/kiturami.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/ginja.svg" class="w-100">
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/dyson.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/toreore.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/tous.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/lotte.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/bing.svg" class="w-100">
+                      </div>
+                    </div>
+
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/woo.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/cheon.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/carrier.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/doredore.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/ediya.svg" class="w-100">
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/emart.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/gongcha.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/hollys.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/maho.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/mc.svg" class="w-100">
+                      </div>
+                    </div>
+                    <div class="row mt-4">
+                      <div class="col">
+                        <img src="img/park.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                        <img src="img/selecto.svg" class="w-100">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+                      <div class="col">
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="row">
+      </footer>
+    </div>
+
+
+
+    <div id="m_visual">
+      <div class="history_wrap wrap_width px-4">
+        <div class="text-black fw-bolder about_namok_title">
+          <div class="animate__animated animate__fadeInLeft">Business</div>
+          <div class="animate__animated animate__fadeInDown">introduction</div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-4 fs-7">
+            <div class="pad_only">
+              <div class="row" style="padding-top: 70px">
+                <div class="col-5 fw-bold">
+                </div>
+                <div class="col-1"></div>
+                <div class="col-6 text-start text-dark">
+                  <div class="">
+                    <p class="fs-5 fw-bold mb-2">모임기반의 O2O 플랫폼 서비스의 개발, 운용</p>
+                    <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                      서비스 플랫폼 ＇부름(Bloom)＇이 2021.11월 런칭하였습니다. 일상생활속에서 쉽게
+                      찾아볼 수 있는 이벤트와 관련된 모든 정보와 예약이 가능하며 복합 결제방식으로 선택
+                      할 경우 최대 30%의 할인혜택까지 받아갈 수 있습니다. </p>
+                  </div>
+                  <div class="mt-5">
+                    <p class="fs-5 fw-bold mb-2">빅 데이터를 이용한 소비자 행동 분석 </p>
+                    <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                      소비자 행동 패턴 분석을 이용한 소비자의 숨은 니즈를 발견하고 및 행동 변화 예측하여 알맞은 상품을 추천드리고자 합니다. 고객 불만 데이터를 분석하여 전사적 서비스 개선에 반영하고 공공 데이터 분석을 이용하여 리스크를 관리하고자 합니다. </p>
+                  </div>
+                  <div class="collapse" id="m_collapseMg">
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">다양한 정보를 활용한 콘텐츠 배포</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        모임기반의 O2O플랫폼인만큼 해당 카테고리별 필요한 정보를 분석하여 콘텐츠를 제작하여 배포하고자 합니다. </p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">온라인 커머스 시장확대와 영업제휴</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        플랫폼에서의 다양한 상품과 서비스, 합리적인 가격을 위해 비즈니스 제휴와 M&A로 회사와 브랜드 영향력을 넓히고자 합니다.
+                      </p>
+                    </div>
+                    <!--
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">이해상충 방지</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        임직원은 어떠한 상황에서도 개인의 이익보다는 회사의 이익을 추구하며, 개인적인 관계
+                        또는 경제적 이익을 취하는 것을 금지하고 있습니다. 이를 위해 회사 임직원은 회사의
+                        사업에 영향을 미치거나 영향을 미칠 수 있을 것으로 보이는 선물이나 접대를 요구하거나
+                        받지 않습니다.</p>
+                    </div>
+-->
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">디지털 거버넌스의 형성</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        플랫폼 정책결정 과정에의 참여와 상호작용이 형식적, 관례적 과정이 아닌 실질적, 실효성 높은 새로운 의사 결정방식으로서 디지털 거버넌스의 구축 및 운영을 하고자 합니다. </p>
+                    </div>
+                  </div>
+                  <a class="btn btn-white border py-2 more_btn mt-4 p-relative px-4" data-bs-toggle="collapse" href="#m_collapseMg" role="button" aria-expanded="false" aria-controls="m_collapseMg" style="z-index: 9999; position: relative; font-size: 14px;">
+                  </a>
+                  <img src="img/city.svg" class="intro_image">
+                </div>
+              </div>
+            </div>
+            <div class="mobile_only center">
+              <div class="row" style="padding-top: 70px">
+                <div class="col-12 text-start text-dark mt-5">
+                  <div class="">
+                    <p class="fs-5 fw-bold mb-2">법정, 규정, 윤리강령 준수</p>
+                    <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                      법령, 규정, 윤리강령 준수는 회사의 모든 사업영역과 활동에서 가장 기본이 되는
+                      태도와 자세이며, 임직원은 업무 수행 시 관련 법령, 규정, 윤리강령을 준수합니다.</p>
+                  </div>
+                  <div class="mt-5">
+                    <p class="fs-5 fw-bold mb-2">불공정거래 금지</p>
+                    <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                      업무를 수행하는 과정에서 임직원이 습득한 비공개 정보를 이용한 거래행위를
+                      금지하고 있으며, 불공정거래와 관련된 규제사항을 준수합니다.</p>
+                  </div>
+                  <div class="collapse" id="m_collapseMg">
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">정확한 회계와 기록</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        재무제표를 작성하는데 있어 엄격한 기준을 준수하고 있으며, 회계장부는 모든 거래
+                        내용이 정확하게 기재되어 있습니다.</p>
+                    </div>
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">개인정보 보호</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        개인정보 취급에 관한 법령을 철저히 준수하고 있으며, 합리적인 이용목적을 달성하기
+                        위해 필요한 정보만을 수집하고 있습니다. 또한 이용자에게 수집한 개인정보 및 이용
+                        목적을 명확히 전달하고 오로지 이용 목적을 위해서만 개인정보를 이용하고 있습니다.</p>
+                    </div>
+                    <!--
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">이해상충 방지</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        임직원은 어떠한 상황에서도 개인의 이익보다는 회사의 이익을 추구하며, 개인적인 관계
+                        또는 경제적 이익을 취하는 것을 금지하고 있습니다. 이를 위해 회사 임직원은 회사의
+                        사업에 영향을 미치거나 영향을 미칠 수 있을 것으로 보이는 선물이나 접대를 요구하거나
+                        받지 않습니다.</p>
+                    </div>
+-->
+                    <div class="mt-5">
+                      <p class="fs-5 fw-bold mb-2">사회공헌 활동</p>
+                      <p style="line-height: 25px; font-size: 14px; color: #333333;">
+                        사회적으로 신뢰받고 존경받는 기업이 되기 위하여 적극적인 사회 공헌활동을
+                        실천하고 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="row mobile_only">
+                    <div class="d-grid gap-2 my-4 px-3">
+                      <a class="btn btn-white border border-secondary py-3 more_btn" data-bs-toggle="collapse" href="#m_collapseMg" role="button" aria-expanded="false" aria-controls="m_collapseMg" style="z-index: 100;">
+                      </a>
+                    </div>
+                  </div>
+                  <img src="img/city.svg" class="intro_image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid bg-namok px-4" id="business_section1_m">
+        <div class="row mt-5 py-5" style="position: relative; z-index:20; margin-top: -10px !important;">
+          <div class="col-12 my-4 fs-7">
+            <div class="container-fluid px-0 border_solid pb-1">
+              <div class="row gx-1">
+                <div class="col-sm-auto col-12 fs-1 text-333333 fw-bold mt-1">회사연혁</div>
+                <div class="col-sm-7 col-12 sub_title mt-1">나목이 걸어온 발자취 입니다.</div>
+              </div>
+            </div>
+            <div class="partners">
+              <p class="mt-5 pt-4 text-dark"><b>Developer</b><span style="font-size: 13px">&nbsp;&nbsp;&nbsp;개발 파트너사 입니다.</span></p>
+              <div class="row">
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/01_aws.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/02_dataweaver.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/03_KG.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/04_Froala.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/05_kbsys.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/06_datagate.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/07_42MARU.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/08_Trustology.svg" class="w-100">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+              </div>
+            </div>
+            <div class="partners">
+              <p class="mt-5 text-dark"><b>Marketing</b><span style="font-size: 13px">&nbsp;&nbsp;&nbsp;마케팅 파트너사 입니다.</span></p>
+              <div class="row">
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/09_graphics.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/10_jc.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/11_dp.svg" class="w-100">
+                </div>
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+              </div>
+            </div>
+
+            <div class="partners">
+              <p class="mt-5 text-dark"><b>Law firm</b><span style="font-size: 13px">&nbsp;&nbsp;&nbsp;법률관련 파트너사 입니다.</span></p>
+              <div class="row mt-3">
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/12_dlight.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/13_dentons.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/14_rene.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/15_BCAS.svg" class="w-100">
+                </div>
+                <div class="col">
+                </div>
+              </div>
+            </div>
+
+            <div class="partners">
+              <p class="mt-5 text-dark"><b>Store Brand</b><span style="font-size: 13px">&nbsp;&nbsp;&nbsp;입점 판매상품 브랜드사 입니다.</span></p>
+              <div class="row mt-3">
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/LG.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/PAYS.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/goobne.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/kiturami.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/ginja.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/dyson.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/toreore.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/tous.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/lotte.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/bing.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/woo.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/cheon.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/tiger.svg" class="w-100">
+                </div>
+
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/doredore.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/ediya.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/emart.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/gongcha.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/hollys.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/maho.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/mc.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/park.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                  <img src="img/selecto.svg" class="w-100">
+                </div>
+                <div class="col-sm-4 col-md-3 col-6 mt-3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile_footer">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="mobile">
+    <div id="mobile_header">
+
+    </div>
+  </div>
+
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
+  <script src="js/slider.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+        sectionsColor: ['#4A6FB1', '#939FAA', '#323539'],
+        scrollOverflow: true
+      });
+    });
+  </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  <script>
+    $(function() {
+      $('#header').load('header.html');
+      $('#mobile_header').load('m_header.html');
+      $('footer').load('footer.html');
+      $('#mobile_footer').load('m_footer.html');
+    });
+  </script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+</body>
+
+</html>

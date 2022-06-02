@@ -1,0 +1,106 @@
+      <div class="inner">
+        <div class="footer_top ">
+          <p class="footer_logo">푸터로고</p>
+          <!-- footer_sns -->
+          <ul class="sns float-end mt-1">
+                <li>
+                  <a onclick="window.open('https://www.instagram.com/office.bloom/')" class="me-2 cursor-pointer">
+                    <img src="img/footer_ico1.svg" alt="인스타그램 바로가기">
+                  </a>
+                </li>
+                <li>
+                  <a onclick="window.open('https://www.facebook.com/AllEvent.Bloom/')" class="me-2 cursor-pointer">
+                    <img src="img/footer_ico2.svg" alt="페이스북 바로가기">
+                  </a>
+                </li>
+                <li>
+                  <a onclick="window.open('https://blog.naver.com/namokcompany')" class="cursor-pointer">
+                    <img src="img/footer_ico3.svg" alt="블로그 바로가기">
+                  </a>
+                </li>
+              </ul>
+          <!-- //footer_sns -->
+        </div>
+
+        <div class="footer_btm">
+          <!-- footer_nav --
+          <ul class="footer_nav fw-bold fs-6">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a title="새창" href="#" target="_blank"><span class="point">나목 윤리경영</span>
+                상담/제보</a></li>
+            <li><a href="#">오시는 길</a></li>
+            <li><a href="#sitemap_cont" class="btn_sitemap">사이트맵</a></li>
+          </ul>
+          <!-- //footer_nav -->
+          <address>
+            <div class="clearfix">
+              <p class="float-start"  style="font-size: 14px">
+                <span>주소 서울특별시 강남구 테헤란로10길 16, 2층 (역삼동, 쁠랑빌딩)</span>
+                <span>상호명 ㈜나목</span>
+                <span>TEL 02-2038-3949</span>
+              </p>
+              
+            </div>
+            <div class="mt-2 clearfix"  style="font-size: 14px">
+              <div class="float-start">
+                <span>대표이사 옥순호</span>
+                <span>사업자번호 871-87-02115</span>
+              </div>
+              <div class="float-end">
+                Copyrights@나목. All Rights Reserved.
+              </div>
+            </div>
+          </address>
+          <!-- mb_family_site --
+          <div class="mb_family_site">
+            <a href="#pop_family_site" class="btn_mb_family_site btn_pop">패밀리사이트</a>
+          </div>
+          <!-- //mb_family_site -->
+          <!-- 20210601 웹접근성 --
+          <div class="webAcc">
+            <span><img src="./resources/images/layout/img_ksqei.png" alt="한국 품질만족지수"></span>
+            <span><img src="./resources/images/layout/img_ks.png" alt="2020 한국소비자웰빙환경만족지수" /></span>
+            <span><img src="./resources/images/layout/img_nsa.png" alt="2020 국가서비스대상" /></span>
+            <a title="새창" href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"><img src="./resources/images/layout/img_webAcc.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" /></a>
+          </div>
+          <!--// 20210601 웹접근성 -->
+
+          <!-- popup : 패밀리사이트 -->
+          <section class="modal" id="pop_family_site">
+            <div class="modal_wrap">
+              <!-- modal_body -->
+              <div class="modal_body">
+                <h2 class="tit tit_s">패밀리 사이트</h2>
+                <!-- family_site_list -->
+                <ul class="family_site_list">
+                  <li><a href="#" target="_blank" title="새창열림">나목 예약사이트</a>
+                  </li>
+                  <li><a href="#" target="_blank" title="새창열림">스마트링크</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">스마트케어</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">sample</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">나목 서비스</a>
+                  </li>
+                  <li><a href="#" target="_blank" title="새창열림">sample</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">sample</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">워커힐</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">sample</a></li>
+                  <li><a href="#" target="_blank" title="새창열림">나목 다이렉트</a></li>
+                </ul>
+                <!-- //family_site_list -->
+              </div>
+              <!-- //modal_body -->
+              <a href="javascript:pop_close();" class="btn_pop_close"><em><span>패밀리 사이트 닫기</span></em></a>
+            </div>
+          </section>
+          <!-- //popup : 패밀리사이트 -->
+        </div>
+      </div>
+      <!--	<script src="namok/jquery.min.js"></script>-->
+      <script src="namok/ui.js"></script>
+      <script src="namok/template.js"></script>
+
+      <script>
+        $(function() {
+          $('.btn_pop').popOpen();
+        });
+      </script>

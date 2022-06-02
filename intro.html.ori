@@ -1,0 +1,766 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="theme-color" content="#e51737">
+  <meta name="naver-site-verification" content="e4d18eab52ecd093b9ae9520e9a6c44fd378fa22" />
+  <meta name="google-site-verification" content="FyfP2bVM-HWajJkCEfLKu9YtC5IIUmWE1Mbbowh8cUk" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:title" content="나목">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="#">
+  <meta property="og:image" content="./resources/images/layout/img_og.jpg">
+  <meta name="description" content="부름 - 나목">
+  <meta name="og:description" content="부름 - 나목">
+  <meta name="keyword" content="나목, 나목 관련 키워드">
+  <meta name="og:keyword" content="나목, 나목 관련 키워드">
+  <title>나목 기업 홈페이지</title>
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="namok/style.css">
+  <script src="namok2/jquery-1.12.4.min.js"></script>
+  <script src="namok/header.js"></script>
+  <script src="namok/template.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </head>
+<body>
+  <a href="#container" accesskey="1" class="skip_area">메뉴건너뛰고 본문 바로가기</a>
+  <span itemscope="" itemtype="#">
+    <link itemprop="url" href="#">
+    <a itemprop="sameAs" href="#" tabindex="-1"></a>
+    <a itemprop="sameAs" href="#" tabindex="-1"></a>
+    <a itemprop="sameAs" href="#" tabindex="-1"></a>
+    <a itemprop="sameAs" href="#" tabindex="-1"></a>
+    <a itemprop="sameAs" href="#" tabindex="-1"></a>
+  </span>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script src="https://www.googletagmanager.com/gtag/js?id=G-G4MZEX2VBP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-G4MZEX2VBP');
+  </script>
+  <!-- wrap -->
+  <div id="wrap" class="main">
+    <!-- 메인일 경우 class="main" -->
+    <header>
+      <span class="bg_mask"></span>
+      <!-- header -->
+      <p class="logo"><a href="../../index.html"><span>나목</span></a></p>
+      <!-- header_cont -->
+      <div class="header_cont">
+        <!-- gnb -->
+        <nav id="gnb">
+          <h2 class="blind">GNB</h2>
+          <!-- gnb_nav -->
+          <ul class="gnb_nav">
+            <!-- 회사소개 -->
+            <li class="dep"><a href="#" class="dep_m"><span>회사소개</span></a>
+              <div class="dep2">
+                <ul class="li_dep">
+                  <li class="li"><a href="#" class="dep_m2">나목 소개</a>
+                    <ul class="li_dep2">
+                      <li><a href="#" class="dep_m3">기업소개</a></li>
+                      <li><a href="#" class="dep_m3">CEO 인사말</a></li>
+                      <li><a href="#" class="dep_m3">기업문화</a></li>
+                      <li><a href="#" class="dep_m3">투명경영</a></li>
+                      <li><a href="#" class="dep_m3">오시는 길</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="dep_m2">전국 네트워크</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //회사소개 -->
+            <!-- 사업소개 -->
+            <li class="dep"><a href="##" class="dep_m"><span>사업소개</span></a>
+              <div class="dep2">
+                <ul class="li_dep">
+                  <li class="li"><a href="##" class="dep_m2">장기/중기/단기</a></li>
+                  <li class="li"><a href="##" class="dep_m2">EV 사업</a></li>
+                  <li class="li"><a href="##" class="dep_m2">스마트링크</a></li>
+                  <li class="li"><a href="##" class="dep_m2">스마트케어</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //사업소개 -->
+            <!-- 지속가능경영 -->
+            <li class="dep">
+              <a href="#" class="dep_m"><span>지속가능경영</span></a>
+              <div class="dep2">
+                <ul class="li_dep">
+                  <li class="li"><a href="##" class="dep_m2">지속가능경영 소개</a></li>
+                  <li class="li"><a href="##" class="dep_m2">지배구조</a>
+                    <ul class="li_dep2">
+                      <li><a href="##" class="dep_m3">이사회</a></li>
+                      <li><a href="##" class="dep_m3">기업지배구조헌장</a></li>
+                      <li><a href="##" class="dep_m3">모범규준과의 차이</a></li>
+                      <li><a href="##" class="dep_m3">주주총회</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="###" class="dep_m2">사회적 가치</a></li>
+                  <li class="li"><a href="###" class="dep_m2">고객가치</a>
+                    <ul class="li_dep2">
+                      <li><a href="###" class="dep_m3">고객보호체계</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="###" class="dep_m2">SHE 경영</a></li>
+                  <li class="li"><a href="###" class="dep_m2">윤리경영</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //지속가능경영 -->
+            <!-- 투자정보 -->
+            <li class="dep"><a href="#" class="dep_m"><span>투자정보</span></a>
+              <div class="dep2">
+                <ul class="li_dep">` `
+                  <li class="li"><a href="#" class="dep_m2">주식정보</a></li>
+                  <li class="li"><a href="#" class="dep_m2">재무정보</a>
+                    <ul class="li_dep2">
+                      <li><a href="##" class="dep_m3">주요재무현황</a></li>
+                      <li><a href="##" class="dep_m3">감사보고서</a></li>
+                      <li><a href="##" class="dep_m3">신용등급</a></li>
+                    </ul>
+                  </li>###
+                  <li class="li"><a href="##" class="dep_m2">IR자료실</a>
+                    <ul class="li_dep2">
+                      <li><a href="##" class="dep_m3">경영실적발표</a></li>
+                    </ul>
+                  </li>##
+                  <li class="li"><a href="##" class="dep_m2">공시정보</a></li>
+                  <li class="li"><a href="##" class="dep_m2">전자공고</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //투자정보 -->
+            <!-- 홍보센터 -->
+            <li class="dep"><a href="###" class="dep_m"><span>홍보센터</span></a>
+              <div class="dep2">
+                <ul class="li_dep">
+                  <li class="li"><a href="###" class="dep_m2">보도자료</a></li>
+                  <li class="li"><a href="###" class="dep_m2">SNS라이브</a></li>
+                  <li class="li"><a href="###" class="dep_m2">AD라이브러리</a></li>
+                  <li class="li"><a href="###" class="dep_m2">나목 사보</a>
+                    <ul class="li_dep2">
+                      <li><a href="###" class="dep_m3">PBA/LPBA 챔피언십</a></li>
+                      <li><a href="###" class="dep_m3">PBA 팀리그</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="###" class="dep_m2">CI메뉴얼</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //홍보센터 -->
+            <!-- 인재채용 -->
+            <li class="dep"><a href="#" class="dep_m"><span>인재채용</span></a>
+              <div class="dep2">
+                <ul class="li_dep">
+                  <li class="li"><a href="#" class="dep_m2">인재상</a></li>
+                  <li class="li"><a href="#" class="dep_m2">인사제도</a></li>
+                  <li class="li"><a href="#" class="dep_m2">채용</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //인재채용 -->
+
+            <!-- mb_footer -->
+            <li class="mb_footer">
+              <!-- mb_footer_nav -->
+              <ul class="mb_footer_nav">
+                <li class="full"><a title="새창" href="#" target="_blank"><span class="point">나목 윤리경영</span> 상담/제보</a></li>
+                <li><a href="#sitemap_cont" class="btn_sitemap">사이트맵</a></li>
+                <li><a href="#">오시는 길</a></li>
+                <!--<li class="full"><a href="#">개인정보처리방침</a></li>-->
+              </ul>
+              <!-- //mb_footer_nav -->
+              <!-- mb_footer_sns -->
+              <ul class="mb_footer_sns">
+                <li class="s5"><a href="#" target="_blank" title="새창열림"><span>YOUTUBE
+                      바로가기</span></a></li>
+                <li class="s3"><a href="#" target="_blank" title="새창열림"><span>facebook 바로가기</span></a></li>
+                <li class="s2"><a href="#" target="_blank" title="새창열림"><span>인스타그램 바로가기</span></a></li>
+                <li class="s1"><a href="#" target="_blank" title="새창열림"><span>Blog 바로가기</span></a></li>
+                <li class="s4"><a href="#" target="_blank" title="새창열림"><span>NAVER POST 바로가기</span></a></li>
+              </ul>
+              <!-- //mb_footer_sns -->
+              <p class="copyrigth">Copyrights@나목. All Rights Reserved.</p>
+              <!-- mb_webAcc --
+              <div class="mb_webAcc">
+                <span><a title="새창" href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank"><img src="./resources/images/layout/img_mb_webAcc.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹 접근성 품질인증 마크)" /></a></span>
+                <span><img src="./resources/images/layout/img_mb_nsa.png" alt="2020 국가서비스대상" /></span>
+                <span><img src="./resources/images/layout/img_mb_ks.png" alt="2020 한국소비자웰빙환경만족지수" /></span>
+                <span><img src="./resources/images/layout/img_mb_ksqei.png" alt="한국 품질만족지수"></span>
+              </div>
+              <!--// mb_webAcc -->
+            </li>
+            <!-- //mb_footer -->
+          </ul>
+          <!-- //gnb_nav -->
+
+          <!-- utill_nav -->
+          <div class="utill_nav">
+            <!-- lang_box -->
+            <div class="li lang_box">
+              <span class="hit"></span>
+              <a href="#lang_cont" class="btn_lang"><span>언어선택</span><em>KOR</em></a>
+              <div id="lang_cont">
+                <ul>
+                  <li class="on"><a href="#"><span>KOR</span></a></li>
+                  <li><a href="#"><span>ENG</span></a></li>
+                  <!-- <li><a href="#"><span>CHN</span></a></li> -->
+                </ul>
+              </div>
+
+            </div>
+            <!-- //lang_box -->
+
+            <!-- sitemap_box -->
+            <div class="li sitemap_box">
+              <a href="#sitemap_cont" class="btn_sitemap"><em><span>사이트맵</span></em></a>
+            </div>
+            <!-- //sitemap_box -->
+          </div>
+          <!-- //utill_nav -->
+        </nav>
+        <!-- //gnb -->
+
+
+
+
+      </div>
+      <!-- //header_cont -->
+      <!-- sitemap : 위치 변경 -->
+      <div id="sitemap_cont">
+        <em class="bg"></em>
+        <!-- sitemap_inner -->
+        <div class="sitemap_inner">
+          <ul>
+            <!-- 회사소개 -->
+            <li class="sm_dep">
+              <a href="#" class="sm_dep_m">회사소개</a>
+              <div class="sm_dep2">
+                <ul class="sm_li_dep">
+                  <li class="li">
+                    <a href="#" class="sm_dep_m2">나목 소개</a>
+                    <ul class="sm_li_dep2">
+                      <li><a href="#" class="sm_dep_m3">기업소개</a></li>
+                      <li><a href="#" class="sm_dep_m3">CEO 인사말</a></li>
+                      <li><a href="#" class="sm_dep_m3">기업문화</a></li>
+                      <li><a href="#" class="sm_dep_m3">투명경영</a></li>
+                      <li><a href="#" class="sm_dep_m3">오시는 길</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="sm_dep_m2">전국 네트워크</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //회사소개 -->
+            <!-- 사업소개 -->
+            <li class="sm_dep">
+              <a href="#" class="sm_dep_m">사업소개</a>
+              <div class="sm_dep2">
+                <ul class="sm_li_dep">
+                  <li class="li"><a href="#" class="sm_dep_m2">장기/중기/단기</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">EV 사업</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">스마트링크</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">스마트케어</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //사업소개 -->
+            <!-- 지속가능경영 -->
+            <li class="sm_dep">
+              <a href="#l" class="sm_dep_m"><span>지속가능경영</span></a>
+              <div class="sm_dep2">
+                <ul class="sm_li_dep">
+                  <li class="li"><a href="#" class="sm_dep_m2">지속가능경영 소개</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">지배구조</a>
+                    <ul class="li_dep2">
+                      <li><a href="#" class="sm_dep_m3">이사회</a></li>
+                      <li><a href="#" class="sm_dep_m3">기업지배구조헌장</a></li>
+                      <li><a href="#" class="sm_dep_m3">모범규준과의 차이</a></li>
+                      <li><a href="#" class="sm_dep_m3">주주총회</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="sm_dep_m2">사회적 가치</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">고객가치</a>
+                    <ul class="sm_li_dep2">
+                      <li><a href="#" class="sm_dep_m3">고객보호체계</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="sm_dep_m2">SHE 경영</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">윤리경영</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //지속가능경영 -->
+            <!-- 투자정보 -->
+            <li class="sm_dep">
+              <a href="#" class="sm_dep_m">투자정보</a>
+              <div class="sm_dep2">
+                <ul class="sm_li_dep">
+                  <li class="li"><a href="#" class="sm_dep_m2">주식정보</a></li>
+                  <li class="li">
+                    <a href="#" class="sm_dep_m2">재무정보</a>
+                    <ul class="sm_li_dep2">
+                      <li><a href="#" class="sm_dep_m3">주요재무현황</a></li>
+                      <li><a href="#" class="sm_dep_m3">감사보고서</a></li>
+                      <li><a href="#" class="sm_dep_m3">신용등급</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="sm_dep_m2">IR자료실</a>
+                    <ul class="sm_li_dep2">
+                      <li><a href="#" class="sm_dep_m3">경영실적발표</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="sm_dep_m2">공시정보</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">전자공고</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //투자정보 -->
+            <!-- 홍보센터 -->
+            <li class="sm_dep">
+              <a href="#" class="sm_dep_m">홍보센터</a>
+              <div class="sm_dep2">
+                <ul class="sm_li_dep">
+                  <li class="li"><a href="#" class="sm_dep_m2">보도자료</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">SNS라이브</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">AD라이브러리</a></li>
+                  <li class="li">
+                    <a href="#" class="sm_dep_m2">나목 프로당구팀</a>
+                    <ul class="sm_li_dep2">
+                      <li><a href="#" class="sm_dep_m3">PBA/LPBA 챔피언십</a></li>
+                      <li><a href="#" class="sm_dep_m3">PBA 팀리그</a></li>
+                    </ul>
+                  </li>
+                  <li class="li"><a href="#" class="sm_dep_m2">CI메뉴얼</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //홍보센터 -->
+            <!-- 인재채용 -->
+            <li class="sm_dep">
+              <a href="#" class="sm_dep_m">인재채용</a>
+              <div class="sm_dep2">
+                <ul class="sm_li_dep">
+                  <li class="li"><a href="#" class="sm_dep_m2">인재상</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">인사제도</a></li>
+                  <li class="li"><a href="#" class="sm_dep_m2">채용</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- //인재채용 -->
+          </ul>
+          <a href="#sitemap_cont" class="btn_sitemap_cl"><em><span>사이트맵 닫기</span></em></a>
+        </div>
+        <!-- //sitemap_inner -->
+      </div>
+    </header>
+    <!-- //header ./inc/header.html -->
+    <div class="m_header">
+      <p class="logo clearfix">
+        <a class="float-start" href="../../index.html"> </a>
+        <span class="float-end mt-1 me-3" data-bs-toggle="offcanvas" href="#offcanvas1" role="button" aria-controls="offcanvas1">
+          <i class="bi bi-three-dots fs-3 text-black"></i>
+        </span>
+      </p>
+    </div>
+
+
+    <!--offcanvas start-->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas1">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvas1Label">
+          <a href="/namok.html" class="logo float-start">
+            <img src="img/aesop.png" alt="namok" class="mt-1" style="width: 30%">
+          </a>
+        </h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <!--오프캔버스 바디영역:s-->
+
+        <!--시작-->
+
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                ABOUT
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="my-0">
+                  <li>
+                    <a href="namok.html">- 회사소개</a>
+                  </li>
+                  <li class="py-3">
+                    <a href="namok.html#about_section2">- 조직도</a>
+                  </li>
+                  <li>
+                    <a href="namok.html#about_section3">- 가치/윤리경영</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                BUSINESS
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="my-0">
+                  <li>
+                    <a href="namok2.html#business_section1">- 비즈니스 소개</a>
+                  </li>
+                  <li class="pt-3">
+                    <a href="namok2.html#business_section2">- 파트너 소개</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                PLATFORM
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="my-0">
+                  <li>
+                    <a href="namok3.html#platform_section1">- 부름 (Bloom)</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfour">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="false" aria-controls="panelsStayOpen-collapsefour">
+                NEWS
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="my-0">
+                  <li>
+                    <a href="namok5.html#news_section1">- 전체뉴스</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingfive">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefive" aria-expanded="false" aria-controls="panelsStayOpen-collapsefive">
+                RECRUIT
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsefive" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="my-0">
+                  <li>
+                    <a href="namok6.html#recruit_section1">- 복지혜택</a>
+                  </li>
+                  <li class="pt-3">
+                    <a href="namok6.html#recruit_section2">- 인재상</a>
+                  </li>
+                  <li class="pt-3">
+                    <a href="namok6.html#recruit_section3">- 채용절차</a>
+                  </li>
+                  <li class="pt-3">
+                    <a href="namok6.html#recruit_section4">- 채용공고</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingsix">
+              <button class="fw-bold accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsesix" aria-expanded="false" aria-controls="panelsStayOpen-collapsesix">
+                CONTACT
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapsesix" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                <ul class="my-0">
+                  <li>
+                    <a href="namok6.html#recruit_section1">- 찾아오시는 길</a>
+                  </li>
+                  <li class="pt-3">
+                    <a href="namok6.html#recruit_section2">- 문의하기</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--끝-->
+      </div><!-- 오프캔버스 바디영역:e-->
+      <div class="offcanvas-footer">
+        <p class="center m-0 my-1 footer_shadow" style="font-size: 10px; color: #666666">Copyrights@Namok. All Rights Reserved.</p>
+      </div>
+    </div>
+    <!--offcanvas end-->
+
+
+
+    <!-- container -->
+    <div id="container">
+      <!-- cont_area -->
+      <div class="cont_area">
+        <!-- mc_visual -->
+        <div class="mc_visual">
+          <!-- mc_visual_area -->
+          <div class="mc_visual_area">
+            <!-- mc_notice_list -->
+            <ul class="mc_visual_list">
+              <li class="li mb1">
+                <p class="mov"><video src="video/yanolja.mp4" muted loop playsinline=""></video></p>
+              </li>
+              <li class="li mb4">
+                <p class="mov"><video src="video/yanolja.mp4" muted loop playsinline=""></video></p>
+              </li>
+              <li class="li mb5">
+                <p class="img"><img src="img/company_2.jpg" alt=""></p>
+              </li>
+            </ul>
+            <!-- //mc_visual_list -->
+          </div>
+          <!-- //mc_visual_area -->
+
+          <!-- mc_visual_txt -->
+          <div class="mc_visual_txt">
+            <!-- mc_visual_list -->
+            <ul class="mc_visual_t">
+              <li class="li">
+                <div class="txt">
+                  <div>
+                    <p class="t1">
+                      <span>We go!</span>
+                      <span>together</span>
+                    </p>
+                    <p class="t2 tit_s">더불어 함께 성장하는 플랫폼 기업</p>
+                  </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="txt">
+                  <div>
+                    <p class="t1">
+                      <span>We go!</span>
+                      <span>together</span>
+                    </p>
+                    <p class="t2 tit_s">더불어 함께 성장하는 플랫폼 기업</p>
+                  </div>
+                </div>
+              </li>
+              <li class="li">
+                <div class="txt">
+                  <div>
+                    <p class="t1">
+                      <span>Redesign</span>
+                      <span>Happy Life</span>
+                    </p>
+                    <p class="t2 tit_s">고객과 구성원의 행복을 추구하는 나목</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <!-- //mc_visual_list -->
+          </div>
+          <!-- //mc_visual_txt -->
+
+          <!-- mc_control -->
+          <div class="mc_control">
+            <ul>
+              <li class="mc_pagn"></li>
+              <li><a href="#" class="mc_prev">이전</a></li>
+              <li><a href="#" class="mc_stop">배너정지</a></li>
+              <li><a href="#" class="mc_play">배너재생</a></li>
+              <li><a href="#" class="mc_next">다음</a></li>
+            </ul>
+          </div>
+
+
+
+
+
+
+
+
+
+          <!-- //mc_control -->
+        </div>
+        <!-- //mc_visual -->
+        <!-- main_nav_area -->
+        <div class="main_nav_area">
+          <!-- main_inner -->
+          <div class="main_inner">
+            <!-- main_nav -->
+            <ul class="main_nav mb-0">
+              <!-- 회사소개 -->
+              <li class="m1 dep"><a href="#" class="dep_m"><span>ABOUT</span></a>
+                <div class="dep2">
+                  <p class="tit"><a href="#"><span>회사소개</span></a></p>
+                  <ul class="li_dep">
+                    <li class="li"><a href="#" class="dep_m2">나목 소개</a>
+                      <ul class="li_dep2">
+                        <li><a href="#" class="dep_m3">기업소개</a></li>
+                        <li><a href="#" class="dep_m3">CEO 인사말</a></li>
+                        <li><a href="#" class="dep_m3">기업문화</a></li>
+                        <li><a href="#" class="dep_m3">투명경영</a></li>
+                        <li><a href="#" class="dep_m3">오시는 길</a></li>
+                      </ul>
+                    </li>
+                    <li class="li"><a href="#" class="dep_m2">전국 네트워크</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- //회사소개 -->
+              <!-- 사업소개 -->
+              <li class="m2 dep"><a href="#" class="dep_m"><span>BUSINESS</span></a>
+                <div class="dep2">
+                  <p class="tit"><a href="#"><span>사업소개</span></a></p>
+                  <ul class="li_dep">
+                    <li class="li">
+                      <a href="#" class="dep_m2">장기/중기/단기</a>
+                    </li>
+                    <li class="li">
+                      <a href="#" class="dep_m2">EV 사업</a>
+                    </li>
+                    <li class="li">
+                      <a href="#" class="dep_m2">스마트링크</a>
+                    </li>
+                    <li class="li">
+                      <a href="#" class="dep_m2">스마트케어</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <!-- //사업소개 -->
+              <!-- 지속가능경영 -->
+              <li class="m6 dep"><a href="##" class="dep_m"><span>PLATFORM</span></a>
+                <div class="dep2">
+                  <p class="tit"><a href="##"><span>지속가능경영</span></a></p>
+                  <ul class="li_dep">
+                    <li><a href="##" class="dep_m2">지속가능경영 소개</a></li>
+                    <li class="li"><a href="##" class="dep_m2">지배구조</a>
+                      <ul class="li_dep2">
+                        <li><a href="##" class="dep_m3">이사회</a></li>
+                        <li><a href="##" class="dep_m3">기업지배구조헌장</a></li>
+                        <li><a href="##" class="dep_m3">모범규준과의 차이</a></li>
+                        <li><a href="##" class="dep_m3">주주총회</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="##" class="dep_m2">사회적 가치</a></li>
+                    <li class="li"><a href="##" class="dep_m2">고객가치</a>
+                      <ul class="li_dep2">
+                        <li><a href="##" class="dep_m3">고객보호체계</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="##" class="dep_m2">SHE 경영</a></li>
+                    <li><a href="##" class="dep_m2">윤리경영</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- //지속가능경영 -->
+              <!-- 투자정보 -->
+              <li class="m3 dep">
+                <a href="#" class="dep_m"><span>NEWS</span></a>
+                <div class="dep2">
+                  <p class="tit"><a href="#"><span>투자정보</span></a></p>
+                  <ul class="li_dep">
+                    <li class="li"><a href="#" class="dep_m2">주식정보</a></li>
+                    <li class="li"><a href="#" class="dep_m2">재무정보</a>
+                      <ul class="li_dep2">
+                        <li><a href="#" class="dep_m3">주요재무현황</a></li>
+                        <li><a href="#" class="dep_m3">감사보고서</a></li>
+                        <li><a href="#" class="dep_m3">신용등급</a></li>
+                      </ul>
+                    </li>
+                    <li class="li"><a href="#" class="dep_m2">IR자료실</a>
+                      <ul class="li_dep2">
+                        <li><a href="#" class="dep_m3">경영실적발표</a></li>
+                      </ul>
+                    </li>
+                    <li class="li"><a href="#" class="dep_m2">공시정보</a></li>
+                    <li class="li"><a href="#" class="dep_m2">전자공고</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- //투자정보 -->
+              <!-- 홍보센터 -->
+              <li class="m4 dep"><a href="#" class="dep_m"><span>RECURIT</span></a>
+                <div class="dep2">
+                  <p class="tit"><a href="#"><span>홍보센터</span></a></p>
+                  <ul class="li_dep">
+                    <li class="li"><a href="#" class="dep_m2">보도자료</a></li>
+                    <li class="li"><a href="#" class="dep_m2">SNS라이브</a></li>
+                    <li class="li"><a href="#" class="dep_m2">AD라이브러리</a></li>
+                    <li class="li"><a href="#" class="dep_m2">나목 프로당구단</a>
+                      <ul class="li_dep2">
+                        <li><a href="#" class="dep_m3">PBA/LPBA 챔피언십</a></li>
+                        <li><a href="#" class="dep_m3">PBA 팀리그</a></li>
+                      </ul>
+                    </li>
+                    <li class="li"><a href="#" class="dep_m2">CI메뉴얼</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- //홍보센터 -->
+              <!-- 인재채용 -->
+              <li class="m5 dep"><a href="#" class="dep_m"><span>CONTACT</span></a>
+                <div class="dep2">
+                  <p class="tit"><a href="#"><span>인재채용</span></a></p>
+                  <ul class="li_dep">
+                    <li class="li"><a href="#" class="dep_m2">인재상</a></li>
+                    <li class="li"><a href="#" class="dep_m2">인사제도</a></li>
+                    <li class="li"><a href="#" class="dep_m2">채용</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- //인재채용 -->
+            </ul>
+            <!-- //main_nav -->
+          </div>
+          <!-- //main_inner -->
+        </div>
+        <!-- //main_nav_area -->
+      </div>
+      <!-- //cont_area -->
+    </div>
+    <!-- //container -->
+    <!-- footer -->
+    
+    <!-- //footer -->
+  </div>
+  <!-- //wrap -->
+
+<script>
+    $(function() {
+      $('#header').load('header.html');
+      $('#mobile_header').load('m_header.html');
+      $('footer').load('footer.html');
+      $('#mobile_footer').load('m_footer.html');
+    });
+  </script>
+</body>
+
+</html>

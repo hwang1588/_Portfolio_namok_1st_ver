@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="372" height="222" viewBox="0 0 372 222">
+  <g id="그룹_456" data-name="그룹 456" transform="translate(-1170 -994)">
+    <g id="사각형_85" data-name="사각형 85" transform="translate(1170 994)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="372" height="222" stroke="none"/>
+      <rect x="0.5" y="0.5" width="371" height="221" fill="none"/>
+    </g>
+    <text id="복지" transform="translate(1368 1083)" fill="#333" font-size="24" font-family="MalgunGothicBold, Malgun Gothic" letter-spacing="-0.05em"><tspan x="0" y="0">복지</tspan></text>
+    <text id="명절선물_귀향비_유니폼_생일선물_사택지원_경우에_한함_" data-name="명절선물, 귀향비
+유니폼, 생일선물
+사택지원 (경우에 한함)" transform="translate(1368 1114)" fill="#333" font-size="16" font-family="MalgunGothic, Malgun Gothic" letter-spacing="-0.08em"><tspan x="0" y="0">명절선물</tspan><tspan y="0" font-family="NotoSans-Medium, Noto Sans" font-weight="500">, </tspan><tspan y="0">귀향비</tspan><tspan y="0" font-family="NotoSans-Medium, Noto Sans" font-weight="500"></tspan><tspan x="0" y="28">유니폼</tspan><tspan y="28" font-family="NotoSans-Medium, Noto Sans" font-weight="500">, </tspan><tspan y="28">생일선물</tspan><tspan y="28" font-family="NotoSans-Medium, Noto Sans" font-weight="500"></tspan><tspan x="0" y="56">사택지원</tspan><tspan y="56" xml:space="preserve" font-family="NotoSans-Medium, Noto Sans" font-weight="500"> (</tspan><tspan y="56">경우에</tspan><tspan y="56" font-family="NotoSans-Medium, Noto Sans" font-weight="500"> </tspan><tspan y="56">한함</tspan><tspan y="56" font-family="NotoSans-Medium, Noto Sans" font-weight="500">)</tspan></text>
+    <g id="그룹_112" data-name="그룹 112" transform="translate(530.601 918.892)">
+      <g id="그룹_107" data-name="그룹 107" transform="translate(716.399 172.022)">
+        <g id="그룹_106" data-name="그룹 106">
+          <path id="패스_269" data-name="패스 269" d="M737.456,242.066H722.529A1.059,1.059,0,0,1,721.467,241V212.056h-4a1.067,1.067,0,0,1-1.066-1.066V198.042a1.064,1.064,0,0,1,1.066-1.062h17.486a1.066,1.066,0,0,0-1.062,1.062V199.1H718.523v10.823h15.365v1.062a1.069,1.069,0,0,0,1.062,1.066H736.4v.1h-12.8v27.787h12.8V241A1.058,1.058,0,0,0,737.456,242.066Z" transform="translate(-716.399 -196.98)" fill="#062031"/>
+        </g>
+      </g>
+      <g id="그룹_109" data-name="그룹 109" transform="translate(750.111 172.022)">
+        <g id="그룹_108" data-name="그룹 108">
+          <path id="패스_270" data-name="패스 270" d="M830.806,198.042V210.99a1.063,1.063,0,0,1-1.055,1.066h-4.009V241a1.061,1.061,0,0,1-1.062,1.062H809.749A1.059,1.059,0,0,0,810.811,241v-1.062h12.807V212.155H810.811v-.1h1.443a1.07,1.07,0,0,0,1.069-1.066v-1.062h15.358V199.1H813.324v-1.062a1.067,1.067,0,0,0-1.069-1.062h17.5A1.06,1.06,0,0,1,830.806,198.042Z" transform="translate(-809.749 -196.98)" fill="#062031"/>
+        </g>
+      </g>
+      <g id="그룹_111" data-name="그룹 111" transform="translate(732.624 157.108)">
+        <g id="그룹_110" data-name="그룹 110" transform="translate(0 0)">
+          <path id="패스_271" data-name="패스 271" d="M784.848,163.73c-.311-2.155-1.129-3.386-2.428-3.658-1.5-.315-3.271.78-5.569,3.45a55.863,55.863,0,0,0-4.394,6.07,64.319,64.319,0,0,0-3.1-7.534c-1.69-3.339-3.2-4.914-4.736-4.95-1.256-.032-2.269.927-2.989,2.838-1.881,5,3.367,9.213,6.991,11.432h-4.658a1.073,1.073,0,0,0-1.062,1.077v13.132a1.076,1.076,0,0,0,1.062,1.081h1.447V216.03a1.066,1.066,0,0,0,1.059,1.077h11.886a1.066,1.066,0,0,0,1.062-1.077V186.67h1.443a1.078,1.078,0,0,0,1.069-1.081V172.456a1.075,1.075,0,0,0-1.069-1.077h-1.6a10.857,10.857,0,0,0,4.39-3.089A5.848,5.848,0,0,0,784.848,163.73Zm-17.719,3.994c-3.137-2.495-4.319-4.854-3.508-7.008.448-1.185.847-1.457.953-1.457h.007c.021.007,2.029.179,5.72,10.616A25.56,25.56,0,0,1,767.129,167.725ZM777.3,214.953h-9.754V186.77H777.3Zm2.509-41.419v10.978H765.029V173.534Zm2.177-6.575c-1.637,2.123-5.272,3.182-7.654,3.672,4.288-6.668,6.74-8.458,7.57-8.458a.269.269,0,0,1,.1.011c.183.032.55.472.752,1.858A3.687,3.687,0,0,1,781.982,166.959Z" transform="translate(-761.239 -157.108)" fill="#00275c"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

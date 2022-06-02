@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'S-Core';
+    src: url('S-CoreDream-4Regular.eot');
+    src: url('S-CoreDream-4Regular.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-4Regular.woff2') format('woff2'),
+        url('S-CoreDream-4Regular.woff') format('woff'),
+        url('S-CoreDream-4Regular.ttf') format('truetype'),
+        url('S-CoreDream-4Regular.svg#S-CoreDream-4Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core';
+    src: url('S-CoreDream-6Bold.eot');
+    src: url('S-CoreDream-6Bold.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-6Bold.woff2') format('woff2'),
+        url('S-CoreDream-6Bold.woff') format('woff'),
+        url('S-CoreDream-6Bold.ttf') format('truetype'),
+        url('S-CoreDream-6Bold.svg#S-CoreDream-6Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'S-Core';
+    src: url('S-CoreDream-3Light.eot');
+    src: url('S-CoreDream-3Light.eot?#iefix') format('embedded-opentype'),
+        url('S-CoreDream-3Light.woff2') format('woff2'),
+        url('S-CoreDream-3Light.woff') format('woff'),
+        url('S-CoreDream-3Light.ttf') format('truetype'),
+        url('S-CoreDream-3Light.svg#S-CoreDream-3Light') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('Courgette-Regular.eot');
+    src: url('Courgette-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Courgette-Regular.woff2') format('woff2'),
+        url('Courgette-Regular.woff') format('woff'),
+        url('Courgette-Regular.ttf') format('truetype'),
+        url('Courgette-Regular.svg#Courgette-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

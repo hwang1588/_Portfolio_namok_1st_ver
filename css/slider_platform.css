@@ -1,0 +1,237 @@
+h3 {
+  margin: 5px 0;
+}
+
+.sliderContainer {
+  position: relative;
+}
+
+.slider {
+  width: 500px;
+}
+
+.slick-slide:nth-child(2) {
+  background: no-repeat url("../img/platform1.png");
+  background-size: 545px 828px !important;
+  color: white;
+  padding: 80px 0 120px;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-slide:nth-child(3) {
+  background: no-repeat url("../img/platform2.png");
+  background-size: 545px 828px !important;
+  color: white;
+  padding: 80px 0 120px;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+}
+
+
+.slick-slide:nth-child(4) {
+  background: no-repeat url("../img/platform3.png");
+  background-size: 545px 828px !important;
+  color: white;
+  padding: 80px 0 120px;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+}
+
+.slick-slide:nth-child(5) {
+  background: no-repeat url("../img/platform4.png");
+  background-size: 545px 828px !important;
+  color: white;
+  padding: 80px 0 120px;
+  font-size: 30px;
+  font-family: "Arial", "Helvetica";
+  text-align: center;
+}
+
+.progressBarContainer {
+  position: absolute;
+  bottom: 20px;
+  width: 300px;
+  left: 100px;
+}
+
+.progressBarContainer div {
+  display: block;
+  width: 30%;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 5%;
+  float: left;
+  color: white;
+}
+
+.progressBarContainer div:last-child {
+  margin-right: 0;
+}
+
+.progressBarContainer div span.progressBar {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.4);
+  display: block;
+}
+
+.progressBarContainer div span.progressBar .inProgress {
+  /*    background-color: rgba(255, 255, 255, 1);*/
+  background-color: red;
+  width: 0%;
+  height: 4px;
+}
+
+.slick-slide {
+  height: 880px !important;
+}
+
+@media all and (max-width: 1300px) {
+
+  .slider {
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .slick-slide:nth-child(2) {
+    background: no-repeat url("../img/platform1.png");
+    background-size: 272.5px 414px !important;
+    color: white;
+    padding: 40px 0 60px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-slide:nth-child(3) {
+    background: no-repeat url("../img/platform2.png");
+    background-size: 272.5px 414px !important;
+    color: white;
+    padding: 40px 0 60px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+  }
+
+
+  .slick-slide:nth-child(4) {
+    background: no-repeat url("../img/platform3.png");
+    background-size: 272.5px 414px !important;
+    color: white;
+    padding: 40px 0 60px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+
+  }
+
+  .slick-slide:nth-child(5) {
+    background: no-repeat url("../img/platform4.png");
+    background-size: 272.5px 414px !important;
+    color: white;
+    padding: 40px 0 60px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+
+  }
+
+.slick-slide {
+  height: 430px !important;
+}
+}
+
+
+@media all and (max-width: 500px) {
+
+  .slider {
+    width: 125px;
+    margin: 0 auto;
+  }
+
+  .slick-slide:nth-child(2) {
+    background: no-repeat url("../img/platform1.png");
+    background-size: 136px 207px !important;
+    color: white;
+    padding: 20px 0 30px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    color: black;
+  }
+
+  .slick-dots {
+    bottom: -30px;
+  }
+
+  .slick-slide:nth-child(3) {
+    background: no-repeat url("../img/platform2.png");
+    background-size: 136px 207px !important;
+    color: white;
+    padding: 20px 0 30px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+  }
+
+
+  .slick-slide:nth-child(4) {
+    background: no-repeat url("../img/platform3.png");
+    background-size: 136px 207px !important;
+    color: white;
+    padding: 20px 0 30px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+
+  }
+
+  .slick-slide:nth-child(5) {
+    background: no-repeat url("../img/platform4.png");
+    background-size: 136px 207px !important;
+    color: white;
+    padding: 20px 0 30px;
+    font-size: 30px;
+    font-family: "Arial", "Helvetica";
+    text-align: center;
+    /*    margin-top: 300px;*/
+
+  }
+
+.slick-slide {
+  height: 230px !important;
+}
+}
