@@ -6084,6 +6084,7 @@ body.on {
 @media (min-width: 1300px){
 .main .logo a {
   background-image: url(../img/namok_blue1.svg);
+  background-repeat: no-repeat;
 }
 }
 /* .main .logo a {background-image:url(../images/layout/logo.png);} */

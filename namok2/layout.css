@@ -117,8 +117,8 @@ header .logo {
 
 header .logo a {
   display: block;
-  width: 120px;
-  height: 59px;
+  width: 148px;
+  height: 30px;
   /* background: url(../img/aesop.png) center/100% no-repeat; */
   overflow: hidden;
   transition: all 0.4s;
