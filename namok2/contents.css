@@ -6081,11 +6081,11 @@ body.on {
 .main header {
   /*position:fixed;*/
 }
-
+@media (min-width: 1300px){
 .main .logo a {
   background-image: url(../img/namok_blue1.svg);
 }
-
+}
 /* .main .logo a {background-image:url(../images/layout/logo.png);} */
 .main .gnb_nav {
   display: none;
