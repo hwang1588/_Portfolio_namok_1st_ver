@@ -1,4 +1,4 @@
-# Website_Bloom(3rd ver.)
+# Website_Namok(1st ver.)
 
 ## Stack
 
